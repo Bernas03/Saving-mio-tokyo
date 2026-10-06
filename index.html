@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
     <title>Domínio Descontinuado</title>
     <style>
         body {
@@ -25,6 +26,7 @@
         }
         h1 { color: #333; font-size: 28px; margin: 0 0 15px 0; }
         p { color: #666; font-size: 16px; line-height: 1.6; }
+        .url-info { color: #999; font-size: 12px; margin-top: 20px; }
     </style>
 </head>
 <body>
@@ -32,7 +34,21 @@
         <h1>Este Domínio Foi Descontinuado</h1>
         <p>O site mio-tokyo.com deixou de estar ativo.</p>
         <p>Se procura informações sobre este projeto, por favor contacte o proprietário.</p>
-        <p>Este domínio está temporariamente indisponível.</p>
+        <p>Este domínio está temporariamente indisponível e será removido do índice de pesquisa.</p>
+        <div class="url-info">
+            <p>Página acedida: <code id="current-url"></code></p>
+        </div>
     </div>
+
+    <script>
+        // Mostra a URL atual para transparência total
+        document.getElementById('current-url').textContent = window.location.pathname + window.location.search;
+        
+        // Evita que o browser cache diferentes versões
+        if (window.location.pathname !== '/' && window.location.pathname !== '/index.html') {
+            // Redireciona qualquer caminho para a raiz
+            // history.replaceState({}, document.title, '/');
+        }
+    </script>
 </body>
 </html>
