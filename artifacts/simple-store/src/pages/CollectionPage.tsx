@@ -32,7 +32,6 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
                 <h2>{product.name}</h2>
                 <span className="product-price">{formatPrice(product.price)}</span>
               </div>
-              <p className="product-meta">{product.material}</p>
               <button className="add-button" type="button" onClick={() => onAdd(product)}>
                 <Plus size={13} /> Adicionar ao carrinho
               </button>
