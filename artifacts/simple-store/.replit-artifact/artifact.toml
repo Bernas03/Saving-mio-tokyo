@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Loja simples"
+description = "Uma loja online simples com página inicial, coleção de seis produtos e carrinho lateral interativo."
+version = "1.0.0"
+id = "artifacts/simple-store"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24627
+
+[services.development]
+run = "pnpm --filter @workspace/simple-store run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/simple-store", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/simple-store/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "24627"
+BASE_PATH = "/"
