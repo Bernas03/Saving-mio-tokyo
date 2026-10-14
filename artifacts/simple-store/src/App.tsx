@@ -22,7 +22,7 @@ function NotFoundPage() {
   return (
     <main className="not-found">
       <div>
-        <span className="eyebrow">YUME / 夢鞄</span>
+        <span className="eyebrow">MIO TOKYO / 夢鞄</span>
         <h1>Este caminho não existe.</h1>
         <Link href="/">Voltar ao início</Link>
       </div>
@@ -95,9 +95,9 @@ function Storefront() {
         </Route>
       </Switch>
       <footer className="site-footer">
-        <Link href="/" className="footer-signoff">YUME / 夢鞄</Link>
+        <Link href="/" className="footer-signoff">MIO TOKYO / 夢鞄</Link>
         <span>Feito devagar. Para os seus dias.</span>
-        <span>© YUME</span>
+        <span>© MIO TOKYO</span>
       </footer>
       <CartDrawer
         open={cartOpen}

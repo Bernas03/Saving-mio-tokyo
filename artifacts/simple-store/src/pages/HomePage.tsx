@@ -23,7 +23,7 @@ export function HomePage() {
           <span className="art-caption">日々のかばん</span>
           <div className="hero-bag">
             <span className="bag-seam" />
-            <span className="bag-label">Y.</span>
+            <span className="bag-label">M.</span>
           </div>
         </div>
       </section>
