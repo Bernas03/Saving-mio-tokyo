@@ -41,6 +41,13 @@ jobs:
       - name: Copiar CNAME
         run: cp CNAME artifacts/simple-store/dist/public/CNAME
 
+      - name: Gerar páginas para as rotas da SPA
+        working-directory: artifacts/simple-store/dist/public
+        run: |
+          cp index.html 404.html
+          mkdir -p "collections/夢鞄"
+          cp index.html "collections/夢鞄/index.html"
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: artifacts/simple-store/dist/public
