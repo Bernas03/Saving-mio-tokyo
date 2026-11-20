@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react';
 import { Link } from 'wouter';
+import { products, formatPrice } from '@/data/products';
 
 export function HomePage() {
   return (
@@ -19,12 +20,24 @@ export function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="hero-art" role="img" aria-label="Bag on a soft background">
-          <span className="art-sun" />
-          <div className="hero-bag">
-            <span className="bag-seam" />
-            <span className="bag-label">M.</span>
-          </div>
+        <div className="hero-banner">
+          <img src={`${import.meta.env.BASE_URL}products/home-page.png`} alt="MIO TOKYO bag" />
+        </div>
+      </section>
+
+      <section className="home-products" aria-label="Products">
+        <div className="home-products-heading">
+          <span className="eyebrow">The collection</span>
+          <h2>Bucket bags in four colours.</h2>
+        </div>
+        <div className="home-products-grid">
+          {products.map((product) => (
+            <Link key={product.id} href="/collections/夢鞄" className="home-product-card">
+              <img src={product.image} alt={product.name} loading="lazy" />
+              <h3>{product.name}</h3>
+              <span>{formatPrice(product.price)}</span>
+            </Link>
+          ))}
         </div>
       </section>
     </main>
