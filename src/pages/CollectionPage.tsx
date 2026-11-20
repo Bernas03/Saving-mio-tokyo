@@ -16,7 +16,6 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
         </div>
         <p>
           Formas simples, tecidos honestos e espaço para tudo o que faz o seu dia.
-          Seis peças, cada uma com o seu próprio ritmo.
         </p>
       </header>
       <section className="collection-grid" aria-label="Produtos da coleção">

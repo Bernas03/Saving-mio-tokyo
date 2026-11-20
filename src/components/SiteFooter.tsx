@@ -37,7 +37,6 @@ export function SiteFooter() {
       <div className="footer-top">
         <div className="footer-brand">
           <Link href="/" className="footer-signoff">MIO TOKYO / 夢鞄</Link>
-          <p>Feito devagar. Para os seus dias.</p>
           <p className="footer-copyright">© {new Date().getFullYear()} {storeInfo.name}</p>
         </div>
         <nav className="footer-columns" aria-label="Rodapé">
