@@ -21,7 +21,7 @@ export function HomePage() {
           </div>
         </div>
         <div className="hero-banner">
-          <img src={`${import.meta.env.BASE_URL}products/home-page.png`} alt="MIO TOKYO bag" />
+          <img src={`${import.meta.env.BASE_URL}products/home-page2.png`} alt="MIO TOKYO bag" />
         </div>
       </section>
 
