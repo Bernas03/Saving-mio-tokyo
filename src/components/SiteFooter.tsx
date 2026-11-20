@@ -6,6 +6,7 @@ type FooterLink = { label: string; href: string };
 const informationLinks: FooterLink[] = [
   { label: 'Sobre nós', href: '/sobre-nos' },
   { label: 'Contacto', href: '/contacto' },
+  { label: 'Rastreamento', href: '/rastreamento' },
 ];
 
 const policyLinks: FooterLink[] = [
