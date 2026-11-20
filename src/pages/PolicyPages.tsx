@@ -6,56 +6,127 @@ import { storeInfo } from '@/data/store-info';
 
 export function TermsPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Termos e condições" intro={`Última atualização: [data].`}>
+    <InfoPage eyebrow="Legal" title="Termos e condições">
       <section>
-        <h2>1. Quem somos</h2>
         <p>
-          Este site é explorado pela {storeInfo.legalName} (NIF/VAT {storeInfo.vatNumber}), com sede em{' '}
-          {storeInfo.postalAddress}. Ao utilizar a loja {storeInfo.name}, aceita estes termos.
+          This website is operated by {storeInfo.legalName} (Company No. {storeInfo.vatNumber}), registered at{' '}
+          {storeInfo.postalAddress}. Throughout the site, "we", "us" and "our" refer to {storeInfo.name}.{' '}
+          {storeInfo.name} offers this website, including all information, tools and services available from it,
+          conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting
+          our site and/or purchasing from us, you engage in our "Service" and agree to these Terms of Service,
+          including all policies referenced herein. Please read them carefully; if you do not agree, you may not
+          use the Service.
         </p>
       </section>
       <section>
-        <h2>2. Produtos e preços</h2>
+        <h2>1 – Online use conditions</h2>
         <p>
-          Os produtos são apresentados com a maior precisão possível, incluindo cores e dimensões. Pequenas
-          variações de tonalidade podem ocorrer devido ao ecrã utilizado. Os preços são indicados em [moeda],
-          com [IVA incluído / excluído], e podem ser alterados sem aviso prévio, sem afetar encomendas já confirmadas.
+          You confirm you are of legal age in your state or province, or have consent for any minor dependents to
+          use the website. You may not use our products for any illegal or unauthorized purpose, nor violate any
+          laws in your jurisdiction, nor transmit any viruses or destructive code. A breach results in immediate
+          termination of your Services.
         </p>
       </section>
       <section>
-        <h2>3. Encomendas</h2>
+        <h2>2 – General conditions</h2>
         <p>
-          A encomenda fica confirmada após o pagamento e o envio de confirmação por email. Reservamo-nos o
-          direito de recusar ou cancelar encomendas em caso de erro evidente de preço, de stock ou de suspeita de fraude.
+          We reserve the right to refuse service to anyone at any time. Your content (excluding credit card
+          information) may be transferred unencrypted; credit card information is always encrypted. You agree not
+          to reproduce, copy, sell or exploit any portion of the Service without our written permission.
         </p>
       </section>
       <section>
-        <h2>4. Pagamento</h2>
-        <p>Os pagamentos são processados através de [prestador de pagamentos]. Não guardamos dados de cartão.</p>
-      </section>
-      <section>
-        <h2>5. Propriedade intelectual</h2>
+        <h2>3 – Accuracy of information</h2>
         <p>
-          Textos, imagens, logótipos e designs deste site pertencem à {storeInfo.legalName} ou são utilizados
-          com autorização. Não podem ser reproduzidos sem consentimento escrito.
+          We are not responsible if information on this site is not accurate, complete or current; it is provided
+          for general information only. We reserve the right to modify the contents at any time without obligation
+          to update.
         </p>
       </section>
       <section>
-        <h2>6. Responsabilidade</h2>
+        <h2>4 – Modifications to service and prices</h2>
         <p>
-          Na medida permitida pela lei, a responsabilidade da loja limita-se ao valor pago pela encomenda em causa.
-          Nada nestes termos afeta os seus direitos como consumidor.
+          Prices are subject to change. We may modify or discontinue the Service at any time. The presentation of
+          products is a non-binding online catalogue; clicking "Buy" makes an offer to enter a purchase agreement,
+          and an automated confirmation email does not constitute acceptance. Statutory warranty rights apply.
         </p>
       </section>
       <section>
-        <h2>7. Lei aplicável</h2>
-        <p>Estes termos são regidos pela lei de [país]. Litígios serão resolvidos pelos tribunais competentes de [foro].</p>
+        <h2>5 – Products or services</h2>
+        <p>
+          Certain products may be available online only and in limited quantities, returnable per our refund
+          policy. We try to display colours and images accurately but cannot guarantee your screen's display.
+          Products ship directly from our suppliers; any customs duties or import taxes are the consumer's
+          responsibility and are made clear in advance where applicable.
+        </p>
       </section>
       <section>
-        <h2>8. Contacto</h2>
+        <h2>6 – Billing & account accuracy</h2>
         <p>
-          Para qualquer dúvida sobre estes termos, escreva para {storeInfo.contactEmail} ou consulte a página de{' '}
-          <a href="/contacto">contacto</a>.
+          We may refuse or limit any order. You agree to provide current, complete and accurate purchase and
+          account information and to update it promptly so we can complete your transactions.
+        </p>
+      </section>
+      <section>
+        <h2>7 – Optional tools & 8 – Third-party links</h2>
+        <p>
+          Third-party tools are provided "as is" without warranty; use at your own risk. Third-party links may lead
+          to sites not affiliated with us; complaints about third-party products go directly to that party.
+        </p>
+      </section>
+      <section>
+        <h2>9 – User submissions</h2>
+        <p>
+          If you send ideas or suggestions, we may use them without restriction or compensation. We may remove
+          content we deem unlawful or objectionable. You are responsible for the accuracy of your comments.
+        </p>
+      </section>
+      <section>
+        <h2>10 – Personal information</h2>
+        <p>Your submission of personal information is governed by our Privacy Policy, available at mio-tokyo.com.</p>
+      </section>
+      <section>
+        <h2>11 – Errors and omissions</h2>
+        <p>
+          The site may contain errors or omissions on descriptions, prices, promotions, shipping and availability.
+          We may correct these and cancel orders if information is inaccurate.
+        </p>
+      </section>
+      <section>
+        <h2>12 – Prohibited uses</h2>
+        <p>
+          You may not use the site for unlawful purposes, to violate laws, infringe IP rights, harass or
+          discriminate, submit false information, upload viruses, collect others' data, spam or phish, or interfere
+          with security features.
+        </p>
+      </section>
+      <section>
+        <h2>13 – Disclaimer; limitation of liability</h2>
+        <p>
+          We do not guarantee the Service will be uninterrupted or error-free. The Service and all products are
+          provided "as is" and "as available" without any warranty, express or implied, to the extent permitted by
+          law.
+        </p>
+      </section>
+      <section>
+        <h2>14 – Indemnification · 15 – Severability · 16 – Termination</h2>
+        <p>
+          You agree to indemnify {storeInfo.legalName} and its affiliates against claims arising from your breach of
+          these Terms. If any provision is unenforceable, the rest remain in effect. These Terms remain valid until
+          terminated by you or by us.
+        </p>
+      </section>
+      <section>
+        <h2>17 – Entire agreement · 18 – Governing law</h2>
+        <p>
+          These Terms constitute the entire agreement between you and us, governed by and interpreted under the laws
+          of England and Wales.
+        </p>
+      </section>
+      <section>
+        <h2>19 – Changes · 20 – Contact</h2>
+        <p>
+          We may update these Terms; continued use constitutes acceptance. Questions: {storeInfo.contactEmail}.
         </p>
       </section>
     </InfoPage>
@@ -64,53 +135,99 @@ export function TermsPage() {
 
 export function PrivacyPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de privacidade" intro="Como recolhemos, usamos e protegemos os seus dados pessoais.">
+    <InfoPage eyebrow="Legal" title="Política de privacidade">
       <section>
-        <h2>Responsável pelo tratamento</h2>
         <p>
-          {storeInfo.legalName}, {storeInfo.postalAddress}, email {storeInfo.contactEmail}.
+          <strong>Last updated: [DATE]</strong>
+        </p>
+        <p>
+          <strong>{storeInfo.legalName}</strong> operates {storeInfo.name} (mio-tokyo.com), including all related
+          information, features, products and services (the "Services"). This Privacy Policy describes how we
+          collect, use and disclose your personal information when you use the Services or communicate with us.{' '}
+          {storeInfo.name} is powered by Shopify.
         </p>
       </section>
+
       <section>
-        <h2>Dados que recolhemos</h2>
+        <h2>Personal information we collect</h2>
+        <ul>
+          <li>
+            <strong>Contact details</strong> — name, address, billing/shipping address, phone, email.
+          </li>
+          <li>
+            <strong>Financial information</strong> — payment card details, transactions, payment method (card data
+            encrypted).
+          </li>
+          <li>
+            <strong>Account information</strong> — username, password, preferences, settings.
+          </li>
+          <li>
+            <strong>Transaction information</strong> — items viewed, added, purchased, returned or cancelled.
+          </li>
+          <li>
+            <strong>Communications</strong> — what you share when contacting customer service.
+          </li>
+          <li>
+            <strong>Device & usage data</strong> — device, browser, IP address, interaction with the Services.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How we use your information</h2>
+        <ul>
+          <li>
+            <strong>Provide & improve the Services</strong> — fulfil orders, process payments, manage your account,
+            organize shipments, facilitate returns, personalize your experience.
+          </li>
+          {/* TODO: confirmar os itens que aparecem entre "Provide & improve" e "Marketing" — não estão nas imagens */}
+          <li>
+            <strong>Marketing</strong> — promotional messages via email/SMS/post and online ads based on your activity
+            (unsubscribe any time).
+          </li>
+          <li>
+            <strong>Security & fraud prevention</strong> — verify your account and detect fraud.
+          </li>
+          <li>
+            <strong>Communication & legal reasons</strong> — support and compliance with applicable law.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Disclosure & Shopify</h2>
         <p>
-          Nome, email, morada de entrega e de faturação, número de telefone (se indicado), dados da encomenda e
-          registos de navegação necessários ao funcionamento do site.
+          We may share data with Shopify, suppliers and service providers (IT, payments, analytics, support, storage,
+          order processing, shipping), with marketing partners, and where legally required. The Services are hosted by
+          Shopify, which processes data to provide and improve them; see Shopify's consumer Privacy Policy at
+          privacy.shopify.com.
         </p>
       </section>
+
       <section>
-        <h2>Para que os usamos</h2>
+        <h2>Your rights</h2>
         <p>
-          Processar e entregar encomendas, responder a pedidos de contacto, cumprir obrigações fiscais e legais
-          e, com o seu consentimento, enviar novidades da loja.
+          Depending on where you live, you may access, delete, correct and port your data, and (UK/EEA) object,
+          restrict and withdraw consent. We will not discriminate for exercising these rights and may verify your
+          identity. Exercise them via the contact below.
         </p>
       </section>
+
       <section>
-        <h2>Base legal</h2>
-        <p>Execução do contrato, cumprimento de obrigações legais, interesse legítimo e consentimento, conforme o caso.</p>
-      </section>
-      <section>
-        <h2>Partilha com terceiros</h2>
+        <h2>Children's data · Security · International transfers</h2>
         <p>
-          Partilhamos dados apenas com prestadores necessários à operação, como pagamentos, transportadoras e
-          serviços de alojamento, e apenas na medida do necessário.
+          The Services are not intended for children under the age of majority. No security measure is fully
+          impenetrable. We may process data outside your country; for transfers outside the EEA/UK we rely on
+          recognized mechanisms (Standard Contractual Clauses).
         </p>
       </section>
+
       <section>
-        <h2>Conservação</h2>
-        <p>Guardamos os dados pelo período exigido pela lei ou pelo tempo necessário para as finalidades indicadas: [prazo].</p>
-      </section>
-      <section>
-        <h2>Os seus direitos</h2>
+        <h2>Complaints & contact</h2>
         <p>
-          Pode pedir acesso, retificação, apagamento, limitação ou portabilidade dos seus dados, e opor-se ao
-          tratamento ou retirar o consentimento a qualquer momento. Para isso, contacte {storeInfo.contactEmail}.
-          Pode ainda apresentar reclamação junto da autoridade de controlo competente.
+          Questions or complaints about how we process your data? Contact {storeInfo.contactEmail}. You may also lodge
+          a complaint with your local data protection authority.
         </p>
-      </section>
-      <section>
-        <h2>Cookies</h2>
-        <p>Utilizamos apenas cookies e armazenamento necessários ao funcionamento do site: [detalhar, se existirem cookies de análise ou marketing].</p>
       </section>
     </InfoPage>
   );
@@ -118,38 +235,51 @@ export function PrivacyPage() {
 
 export function RefundPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de reembolso" intro="Como funcionam devoluções, trocas e reembolsos.">
+    <InfoPage eyebrow="Legal" title="Política de reembolso">
       <section>
-        <h2>Direito de livre resolução</h2>
         <p>
-          Tem [14] dias a contar da receção da encomenda para a devolver sem indicar motivo, desde que o produto
-          esteja em estado original, sem uso e com a embalagem intacta.
+          <strong>Important:</strong> we do not offer free returns — the customer is responsible for the return costs.
         </p>
       </section>
+
       <section>
-        <h2>Como pedir uma devolução</h2>
+        <h2>Can I return my order?</h2>
         <p>
-          Escreva-nos para {storeInfo.contactEmail} com o número da encomenda e o motivo. Enviaremos as
-          instruções para devolução. Os custos de envio da devolução são [a cargo do cliente / da loja].
+          Yes, within <strong>30 days</strong> of receipt, provided: the item is in original condition with all parts
+          and packaging; shows only signs of normal use (no damage from negligence or misuse); hygiene-related products
+          are returned properly cleaned; and the customer bears the return shipping costs.
+        </p>
+        <p>
+          Returns are processed within <strong>7 business days</strong>. {storeInfo.legalName} / {storeInfo.name} may
+          refuse returned items that show use or damage not attributable to us.
         </p>
       </section>
+
       <section>
-        <h2>Reembolso</h2>
+        <h2>How do I return my order?</h2>
         <p>
-          O reembolso é feito pelo mesmo meio de pagamento utilizado, no prazo de [X] dias úteis após a
-          receção e verificação do produto devolvido.
+          Email <strong>{storeInfo.contactEmail}</strong> with: order number, reason, a photo (if damaged), full name
+          and address. <strong>Important:</strong> do not send the return to the sender's address — we provide the
+          correct return address after review.
         </p>
       </section>
+
       <section>
-        <h2>Produtos com defeito</h2>
+        <h2>Cancellation — Right of withdrawal</h2>
         <p>
-          Se o produto chegar danificado ou com defeito, contacte-nos em [X] dias após a receção, com fotografias.
-          Enviaremos um substituto ou procederemos ao reembolso total, à sua escolha.
+          Private customers may cancel within <strong>30 calendar days</strong> of receiving the last item. Since orders
+          are processed immediately, they cannot be cancelled once in transit; in that case follow the return procedure
+          after receipt. You may inform us of your intention to cancel by a clear written request via email.
         </p>
       </section>
+
       <section>
-        <h2>Exceções</h2>
-        <p>[Listar exceções aplicáveis, ex.: produtos personalizados, se existirem.]</p>
+        <h2>After cancellation</h2>
+        <p>
+          We refund all payments received (excluding extra cost of a more expensive than standard delivery), via the
+          same payment method, within a maximum of <strong>30 days</strong> of receiving the returned products. Keep
+          proof of return shipment.
+        </p>
       </section>
     </InfoPage>
   );
@@ -157,48 +287,48 @@ export function RefundPage() {
 
 export function ShippingPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de envio" intro="Prazos, custos e destinos de entrega.">
+    <InfoPage eyebrow="Legal" title="Política de envio">
       <section>
-        <h2>Processamento</h2>
-        <p>As encomendas são preparadas em [X] dias úteis e expedidas assim que estiverem prontas.</p>
-      </section>
-      <section>
-        <h2>Destinos</h2>
-        <p>Entregamos em [países / regiões]. Para outros destinos, contacte-nos antes de encomendar.</p>
-      </section>
-      <section>
-        <h2>Prazos de entrega</h2>
+        <h2>Estimated delivery times</h2>
         <p>
-          Entrega estimada em [X–Y] dias úteis após a expedição, consoante o destino. Os prazos são estimativas
-          e podem variar em épocas de maior procura.
+          Processing takes <strong>1 to 2 business days</strong>. Once shipped, average delivery is{' '}
+          <strong>7 to 12 business days</strong>. Orders placed Friday afternoon or over the weekend may take a
+          little longer to process.
         </p>
       </section>
+
       <section>
-        <h2>Custos de envio</h2>
+        <h2>Shipping costs</h2>
         <p>
-          [Valor] para encomendas até [valor], e envio gratuito acima desse valor. Os custos são apresentados
-          no checkout antes da confirmação.
+          Shipping is <strong>completely free</strong> on all orders. No extra shipping fees and no minimum order
+          value.
         </p>
       </section>
+
+      {/* TODO: confirmar se existem secções entre "Shipping costs" e "Payment options" — não estão nas imagens */}
+
       <section>
-        <h2>Rastreamento</h2>
+        <h2>Payment options</h2>
         <p>
-          Assim que a encomenda for expedida, recebe o número de rastreamento por email. Pode acompanhá-la na
-          página de <a href="/rastreamento">rastreamento</a>.
+          All payment options on mio-tokyo.com are protected with SSL encryption. Available: Credit card (AMEX,
+          Mastercard, Maestro, Visa), Apple Pay, Google Pay and Shop Pay.
         </p>
       </section>
+
       <section>
-        <h2>Taxas e impostos</h2>
+        <h2>Origin & delivery</h2>
         <p>
-          Em envios para fora do país de origem, podem ser cobrados direitos de importação e impostos locais,
-          que são responsabilidade do destinatário.
+          To offer fair prices, we work directly with our suppliers, so delivery times may be longer than with local
+          stock. Any customs duties or import taxes are the consumer's responsibility. During high order volume there
+          may be some delay; we ship as soon as possible and keep you informed.
         </p>
       </section>
+
       <section>
-        <h2>Encomendas extraviadas ou danificadas</h2>
+        <h2>Contact</h2>
         <p>
-          Se a encomenda não chegar ou chegar danificada, contacte-nos em [X] dias. Abriremos um processo junto da
-          transportadora e tomaremos as medidas adequadas.
+          Want priority shipping or have a question? Contact <strong>{storeInfo.contactEmail}</strong> — our customer
+          service is happy to help.
         </p>
       </section>
     </InfoPage>
