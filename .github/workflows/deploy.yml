@@ -22,7 +22,7 @@ jobs:
 
       - uses: pnpm/action-setup@v4
         with:
-          version: 10   # confirme a versão no pnpm-lock.yaml
+          version: 10
 
       - uses: actions/setup-node@v4
         with:
@@ -32,27 +32,31 @@ jobs:
       - run: pnpm install --frozen-lockfile
 
       - name: Build da loja
-        run: pnpm --filter @workspace/simple-store run build
+        run: pnpm run build
         env:
           PORT: 3000
           BASE_PATH: /
           NODE_ENV: production
 
       - name: Copiar CNAME
-        run: cp CNAME artifacts/simple-store/dist/public/CNAME
+        run: cp CNAME dist/public/CNAME
 
       - name: Gerar páginas para as rotas da SPA
-        working-directory: artifacts/simple-store/dist/public
+        working-directory: dist/public
         run: |
           cp index.html 404.html
           mkdir -p "collections/夢鞄"
           cp index.html "collections/夢鞄.html"
           cp index.html "collections/夢鞄/index.html"
           sed -i 's#</head>#<link rel="canonical" href="https://mio-tokyo.com/collections/%E5%A4%A2%E9%9E%84" /></head>#' "collections/夢鞄.html" "collections/夢鞄/index.html"
+          for page in sobre-nos contacto rastreamento termos-e-condicoes politica-de-privacidade politica-de-reembolso politica-de-envio; do
+            mkdir -p "$page"
+            cp index.html "$page/index.html"
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: artifacts/simple-store/dist/public
+          path: dist/public
 
   deploy:
     needs: build

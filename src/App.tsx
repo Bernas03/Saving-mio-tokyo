@@ -8,6 +8,16 @@ import { StoreHeader } from '@/components/StoreHeader';
 import type { Product } from '@/data/products';
 import { CollectionPage } from '@/pages/CollectionPage';
 import { HomePage } from '@/pages/HomePage';
+import { SiteFooter } from '@/components/SiteFooter';
+import { AboutPage } from '@/pages/AboutPage';
+import { ContactPage } from '@/pages/ContactPage';
+import { TrackingPage } from '@/pages/TrackingPage';
+import {
+  PrivacyPage,
+  RefundPage,
+  ShippingPage,
+  TermsPage,
+} from '@/pages/PolicyPages';
 import {
   Route,
   Switch,
@@ -90,15 +100,32 @@ function Storefront() {
         <Route path="/collections/%E5%A4%A2%E9%9E%84">
           <CollectionPage onAdd={addToCart} />
         </Route>
+        <Route path="/sobre-nos">
+          <AboutPage />
+        </Route>
+        <Route path="/contacto">
+          <ContactPage />
+        </Route>
+        <Route path="/rastreamento">
+          <TrackingPage />
+        </Route>
+        <Route path="/termos-e-condicoes">
+          <TermsPage />
+        </Route>
+        <Route path="/politica-de-privacidade">
+          <PrivacyPage />
+        </Route>
+        <Route path="/politica-de-reembolso">
+          <RefundPage />
+        </Route>
+        <Route path="/politica-de-envio">
+          <ShippingPage />
+        </Route>
         <Route>
           <NotFoundPage />
         </Route>
       </Switch>
-      <footer className="site-footer">
-        <Link href="/" className="footer-signoff">MIO TOKYO / 夢鞄</Link>
-        <span>Feito devagar. Para os seus dias.</span>
-        <span>© MIO TOKYO</span>
-      </footer>
+      <SiteFooter />
       <CartDrawer
         open={cartOpen}
         items={cart}
