@@ -118,7 +118,7 @@ export function CartDrawer({
                 <span>Subtotal</span>
                 <strong>{formatPrice(subtotal)}</strong>
               </div>
-              <p className="shipping-note">Frete calculado na próxima etapa.</p>
+              <p className="shipping-note">Free Shipping</p>
               <button className="drawer-continue" type="button" onClick={onClose}>
                 Continuar a escolher <ArrowRight size={15} />
               </button>
