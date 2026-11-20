@@ -46,6 +46,7 @@ export function ContactPage() {
         </dl>
       </section>
 
+      {/* FORMULÁRIO DESATIVADO — para reativar, remove os marcadores de comentário abaixo
       <section>
         <h2>Envie-nos uma mensagem</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
@@ -87,6 +88,7 @@ export function ContactPage() {
           </button>
         </form>
       </section>
+      */}
     </InfoPage>
   );
 }
