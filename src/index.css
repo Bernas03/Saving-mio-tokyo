@@ -1076,3 +1076,55 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* Ajuste de tamanho da home page */
+.hero,
+.home-products {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  display: block;
+}
+
+.home-products {
+  padding: 64px 24px 80px;
+}
+
+.home-products-heading h2 {
+  font-size: 30px;
+  margin: 12px 0 28px;
+}
+
+.home-products-grid {
+  gap: 20px;
+}
+
+.home-product-card img {
+  aspect-ratio: 3 / 4;
+  max-height: 380px;
+  object-fit: cover;
+}
+
+.home-product-card h3 {
+  font-size: 13px;
+}
+
+@media (max-width: 860px) {
+  .hero-banner img {
+    height: 320px;
+  }
+
+  .home-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
