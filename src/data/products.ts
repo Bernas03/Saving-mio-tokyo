@@ -5,43 +5,40 @@ export type Product = {
   image: string;
 };
 
+const base = import.meta.env.BASE_URL;
+
 export const products: Product[] = [
   {
-    id: 'mystic-chat',
-    name: 'サック アルティザナル - ミスティック チャット',
+    id: 'bucket-bag-blue',
+    name: 'Bucket Bag — Blue',
     price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-1.jpg`,
+    image: `${base}products/azul.png`,
   },
   {
-    id: 'cyan-enchante',
-    name: 'サック アルティザナル マテラッセ - シアン エンシャンテ',
+    id: 'bucket-bag-brown',
+    name: 'Bucket Bag — Brown',
     price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-2.jpg`,
+    image: `${base}products/castanho.png`,
   },
   {
-    id: 'yorkshire-charm',
-    name: 'サック アルティザナル - ヨークシャーの魅力',
+    id: 'bucket-bag-green',
+    name: 'Bucket Bag — Green',
     price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-3.jpg`,
+    image: `${base}products/verde.png`,
   },
   {
-    id: 'black-cat-book-bag',
-    name: 'サック・アルティザナル - 黒猫デザインの書籍用バッグ',
+    id: 'bucket-bag-red',
+    name: 'Bucket Bag — Red',
     price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-4.jpg`,
+    image: `${base}products/vermelho.png`,
   },
-  {
-    id: 'flower-quilted-bag',
-    name: 'フラワーパターン キルティングバッグ',
-    price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-5.jpg`,
-  },
-  {
-    id: 'black-cat-and-books',
-    name: 'サック アルティザナル マテラッセ - ブラックキャットと書籍',
-    price: 6000,
-    image: `${import.meta.env.BASE_URL}products/product-6.jpg`,
-  },
+];
+
+// Fotos extra, para a futura página de produto (galeria / tabela de medidas).
+export const extraProductPhotos = [
+  `${base}products/another.png`,
+  `${base}products/home-page.png`,
+  `${base}products/size.png`,
 ];
 
 export function formatPrice(price: number) {

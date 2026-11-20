@@ -34,7 +34,7 @@ function NotFoundPage() {
       <div>
         <span className="eyebrow">MIO TOKYO / 夢鞄</span>
         <h1>Este caminho não existe.</h1>
-        <Link href="/">Voltar ao início</Link>
+        <Link href="/">Home Page</Link>
       </div>
     </main>
   );

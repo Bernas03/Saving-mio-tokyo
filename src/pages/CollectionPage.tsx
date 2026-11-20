@@ -12,7 +12,7 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
       <header className="collection-heading">
         <div>
           <span className="eyebrow">Feitas para acompanhar</span>
-          <h1>夢鞄 <span lang="ja">— malas de sonho</span></h1>
+          <h1>Tote Bags</h1>
         </div>
         <p>
           Formas simples, tecidos honestos e espaço para tudo o que faz o seu dia.

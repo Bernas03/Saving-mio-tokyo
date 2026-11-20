@@ -120,7 +120,7 @@ export function TermsPage() {
         <h2>17 – Entire agreement · 18 – Governing law</h2>
         <p>
           These Terms constitute the entire agreement between you and us, governed by and interpreted under the laws
-          of England and Wales.
+          of United States.
         </p>
       </section>
       <section>

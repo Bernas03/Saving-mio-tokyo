@@ -14,8 +14,8 @@ export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
         <span className="brand-word">MIO TOKYO</span>
       </Link>
       <nav className="header-nav" aria-label="Navegação principal">
-        <Link href="/">Início</Link>
-        <Link href="/collections/夢鞄">Coleção 夢鞄</Link>
+        <Link href="/">Home Page</Link>
+        <Link href="/collections/夢鞄">Collection</Link>
       </nav>
       <button
         className="cart-trigger"
