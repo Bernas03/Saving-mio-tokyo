@@ -138,7 +138,7 @@ export function PrivacyPage() {
     <InfoPage eyebrow="Legal" title="Política de privacidade">
       <section>
         <p>
-          <strong>Last updated: [DATE]</strong>
+          <strong>Last updated: 20/11/2026</strong>
         </p>
         <p>
           <strong>{storeInfo.legalName}</strong> operates {storeInfo.name} (mio-tokyo.com), including all related
