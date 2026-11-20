@@ -50,13 +50,13 @@ export function CartDrawer({
       <button
         className="cart-backdrop"
         type="button"
-        aria-label="Fechar carrinho"
+        aria-label="Close cart"
         onClick={onClose}
       />
       <aside className="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
         <header className="drawer-header">
-          <h2 id="cart-title">O seu carrinho</h2>
-          <button className="icon-button" type="button" onClick={onClose} aria-label="Fechar carrinho">
+          <h2 id="cart-title">Cart</h2>
+          <button className="icon-button" type="button" onClick={onClose} aria-label="Close cart">
             <X size={21} strokeWidth={1.5} />
           </button>
         </header>
@@ -66,10 +66,10 @@ export function CartDrawer({
               <div className="empty-symbol">
                 <ShoppingBag size={27} strokeWidth={1.2} />
               </div>
-              <h3>Ainda está vazio</h3>
-              <p>Temos uma mala feita para acompanhar os seus dias.</p>
+              <h3>Still empty</h3>
+              <p>We have a bag designed to accompany you through every day.</p>
               <Link href="/collections/夢鞄" onClick={onClose}>
-                Conhecer a coleção
+                Discover the Collection
               </Link>
             </div>
           </div>
@@ -107,7 +107,7 @@ export function CartDrawer({
                       type="button"
                       onClick={() => onRemove(product.id)}
                     >
-                      Remover
+                      Remove
                     </button>
                   </div>
                 </article>
@@ -120,7 +120,7 @@ export function CartDrawer({
               </div>
               <p className="shipping-note">Free Shipping</p>
               <button className="drawer-continue" type="button" onClick={onClose}>
-                Continuar a escolher <ArrowRight size={15} />
+                Continue Shopping <ArrowRight size={15} />
               </button>
             </footer>
           </>

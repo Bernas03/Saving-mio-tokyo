@@ -3,14 +3,14 @@ import { InfoPage } from '@/components/InfoPage';
 import { storeInfo } from '@/data/store-info';
 
 const subjects = [
-  'Uma encomenda',
-  'Envios e rastreamento',
-  'Devoluções e reembolsos',
-  'Produtos',
-  'Outro assunto',
+  'An order',
+  'Shipping and tracking',
+  'Returns and refunds',
+  'Products',
+  'Other',
 ];
 
-// O formulário abre o cliente de email do visitante; não há servidor a processar os dados.
+// The form opens the visitor's email app; no server processes the data.
 export function ContactPage() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -28,30 +28,30 @@ export function ContactPage() {
 
   return (
     <InfoPage
-      eyebrow="Fale connosco"
-      title="Contacto"
-      intro="Têm alguma dúvida sobre uma encomenda ou sobre as nossas malas? Escreva-nos."
+      eyebrow="Get in touch"
+      title="Contact"
+      intro="Do you have a question about an order or about our bags? Write to us."
     >
       <section className="contact-details">
-        <h2>Dados de contacto</h2>
+        <h2>Contact details</h2>
         <dl>
           <dt>Email</dt>
           <dd>{storeInfo.contactEmail}</dd>
-          <dt>Horário</dt>
+          <dt>Hours</dt>
           <dd>{storeInfo.contactHours}</dd>
-          <dt>Tempo de resposta</dt>
+          <dt>Response time</dt>
           <dd>{storeInfo.responseTime}</dd>
-          <dt>Morada</dt>
+          <dt>Address</dt>
           <dd>{storeInfo.postalAddress}</dd>
         </dl>
       </section>
 
-      {/* FORMULÁRIO DESATIVADO — para reativar, remove os marcadores de comentário abaixo
+      {/* FORM DISABLED — to re-enable, remove the comment markers below
       <section>
-        <h2>Envie-nos uma mensagem</h2>
+        <h2>Send us a message</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
           <label>
-            Nome
+            Name
             <input value={name} onChange={(e) => setName(e.target.value)} required autoComplete="name" />
           </label>
           <label>
@@ -65,7 +65,7 @@ export function ContactPage() {
             />
           </label>
           <label>
-            Assunto
+            Subject
             <select value={subject} onChange={(e) => setSubject(e.target.value)}>
               {subjects.map((option) => (
                 <option key={option} value={option}>
@@ -75,7 +75,7 @@ export function ContactPage() {
             </select>
           </label>
           <label>
-            Mensagem
+            Message
             <textarea
               rows={6}
               value={message}
@@ -84,7 +84,7 @@ export function ContactPage() {
             />
           </label>
           <button className="button-primary" type="submit">
-            Abrir email
+            Open email
           </button>
         </form>
       </section>

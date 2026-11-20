@@ -6,32 +6,32 @@ export function TrackingPage() {
 
   return (
     <InfoPage
-      eyebrow="Acompanhe a sua encomenda"
-      title="Rastreamento"
-      intro="Para saber onde está a sua encomenda, envie-nos um email com o número da encomenda."
+      eyebrow="Track your order"
+      title="Tracking"
+      intro="To find out where your order is, send us an email with your order number."
     >
       <section>
-        <h2>Como pedir o rastreamento</h2>
+        <h2>How to request tracking</h2>
         <p>
-          Envie um email para <strong>{storeInfo.contactEmail}</strong> com o seguinte assunto:
+          Send an email to <strong>{storeInfo.contactEmail}</strong> with this subject:
         </p>
         <p>
-          <strong>tracking - número da encomenda</strong>
+          <strong>tracking - order number</strong>
         </p>
-        <p>Por exemplo: tracking - 12345</p>
+        <p>For example: tracking - 12345</p>
         <p>
           <a className="button-primary" href={mailto}>
-            Abrir email
+            Open email
           </a>
         </p>
-        <p>Responderemos {storeInfo.responseTime}.</p>
+        <p>We will reply {storeInfo.responseTime}.</p>
       </section>
 
       <section>
-        <h2>Não recebeu o número?</h2>
+        <h2>Didn't receive a number?</h2>
         <p>
-          Verifique a pasta de spam do seu email. Se continuar sem resposta, contacte-nos através da página de{' '}
-          <a href="/contacto">contacto</a>.
+          Check your spam folder. If you still get no reply, contact us through our{' '}
+          <a href="/contact">contact</a> page.
         </p>
       </section>
     </InfoPage>

@@ -4,60 +4,59 @@ import { storeInfo } from '@/data/store-info';
 export function AboutPage() {
   return (
     <InfoPage
-      eyebrow="A MIO TOKYO"
-      title="Sobre nós"
+      eyebrow="About MIO TOKYO"
+      title="About us"
     >
       <section>
-        <h2>Sobre a {storeInfo.name}</h2>
+        <h2>About {storeInfo.name}</h2>
         <p>
-          A {storeInfo.name} é uma loja online com uma missão simples: tornar acessíveis produtos
-          bem selecionados e de boa qualidade, com uma experiência de compra fluida e transparente.
-          Começou como um pequeno projeto, com alguns produtos favoritos, e foi crescendo aos poucos.
+          {storeInfo.name} is an online store with a simple mission: to make well-selected,
+          good-quality products accessible, with a smooth and transparent shopping experience.
+          It started as a small project with a few favourite products and has grown gradually.
         </p>
         <p>
-          Acreditamos que comprar online deve ser honesto e sem surpresas: preços claros, prazos de
-          entrega claros e um apoio ao cliente que responde.
+          We believe online shopping should be honest and free of surprises: clear prices, clear
+          delivery times and customer support that responds.
         </p>
       </section>
 
       <section>
-        <h2>O que nos guia</h2>
+        <h2>What guides us</h2>
         <ul>
           <li>
-            <strong>Qualidade acima de quantidade</strong> — uma seleção cuidada, não um catálogo
-            interminável.
+            <strong>Quality over quantity</strong> — a careful selection, not an endless catalogue.
           </li>
           <li>
-            <strong>Transparência</strong> — preços honestos e prazos de entrega claros, mesmo quando
-            uma entrega demora um pouco mais.
+            <strong>Transparency</strong> — honest prices and clear delivery times, even when a
+            delivery takes a little longer.
           </li>
           <li>
-            <strong>Cliente em primeiro lugar</strong> — a nossa equipa está disponível para ajudar,
-            antes e depois da compra.
+            <strong>Customers first</strong> — our team is available to help, before and after you
+            buy.
           </li>
         </ul>
       </section>
 
       <section>
-        <h2>Envios e origem</h2>
+        <h2>Shipping and origin</h2>
         <p>
-          Para oferecer preços competitivos, trabalhamos diretamente com fornecedores e enviamos
-          para vários países. O tempo médio de entrega e todos os detalhes estão na página de{' '}
-          <a href="/politica-de-envio">envio</a>.
+          To keep prices competitive, we work directly with suppliers and ship to several
+          countries. Average delivery times and all the details are on our{' '}
+          <a href="/shipping-policy">shipping policy</a> page.
         </p>
       </section>
 
       <section>
-        <h2>Contacto</h2>
+        <h2>Contact</h2>
         <p>
-          Dúvidas? A nossa equipa tem todo o gosto em ajudar. Escreva para{' '}
-          <strong>{storeInfo.contactEmail}</strong> e responderemos o mais brevemente possível.
+          Questions? Our team is happy to help. Write to{' '}
+          <strong>{storeInfo.contactEmail}</strong> and we will reply as soon as possible.
         </p>
       </section>
 
       <p>
-        {storeInfo.name} é o nome comercial de <strong>{storeInfo.legalName}</strong> (Nº de registo{' '}
-        {storeInfo.vatNumber}), com sede em {storeInfo.postalAddress}.
+        {storeInfo.name} is the trading name of <strong>{storeInfo.legalName}</strong> (Registration
+        No. {storeInfo.vatNumber}), registered at {storeInfo.postalAddress}.
       </p>
     </InfoPage>
   );

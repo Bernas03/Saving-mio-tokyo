@@ -5,7 +5,7 @@ import { products, formatPrice } from '@/data/products';
 export function HomePage() {
   return (
     <main className="home-main">
-      <section className="hero">
+      <section className="home-split">
         <div className="hero-copy">
           <span className="eyebrow">MIO TOKYO</span>
           <h1>
@@ -20,24 +20,22 @@ export function HomePage() {
             </Link>
           </div>
         </div>
-        <div className="hero-banner">
-          <img src={`${import.meta.env.BASE_URL}products/home-page2.png`} alt="MIO TOKYO bag" />
-        </div>
-      </section>
 
-      <section className="home-products" aria-label="Products">
-        <div className="home-products-heading">
-          <span className="eyebrow">The collection</span>
-          <h2>Bucket bags in four colours.</h2>
-        </div>
-        <div className="home-products-grid">
-          {products.map((product) => (
-            <Link key={product.id} href="/collections/夢鞄" className="home-product-card">
-              <img src={product.image} alt={product.name} loading="lazy" />
-              <h3>{product.name}</h3>
-              <span>{formatPrice(product.price)}</span>
-            </Link>
-          ))}
+        <div className="home-products" aria-label="Products">
+          <div className="home-products-grid">
+            {products.map((product) => (
+              <Link
+                key={product.id}
+                href={`/products/${product.id}`}
+                className="home-product-card"
+                aria-label={product.name}
+              >
+                <img src={product.image} alt={product.name} loading="lazy" />
+                <h3>{product.name}</h3>
+                <span>{formatPrice(product.price)}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>

@@ -12,6 +12,7 @@ import { SiteFooter } from '@/components/SiteFooter';
 import { AboutPage } from '@/pages/AboutPage';
 import { ContactPage } from '@/pages/ContactPage';
 import { TrackingPage } from '@/pages/TrackingPage';
+import { ProductPage } from '@/pages/ProductPage';
 import {
   PrivacyPage,
   RefundPage,
@@ -99,6 +100,9 @@ function Storefront() {
         </Route>
         <Route path="/collections/%E5%A4%A2%E9%9E%84">
           <CollectionPage onAdd={addToCart} />
+        </Route>
+        <Route path="/products/:id">
+          <ProductPage onAdd={addToCart} />
         </Route>
         <Route path="/sobre-nos">
           <AboutPage />

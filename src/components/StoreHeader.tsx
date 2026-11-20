@@ -21,9 +21,9 @@ export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
         className="cart-trigger"
         type="button"
         onClick={onOpenCart}
-        aria-label={`Abrir carrinho, ${itemCount} ${itemCount === 1 ? 'artigo' : 'artigos'}`}
+        aria-label={`open cart, ${itemCount} ${itemCount === 1 ? 'artigo' : 'artigos'}`}
       >
-        <span>Carrinho</span>
+        <span>Cart</span>
         <ShoppingBag size={17} strokeWidth={1.5} aria-hidden="true" />
         <span className="cart-count">{itemCount}</span>
       </button>

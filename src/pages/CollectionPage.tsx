@@ -1,4 +1,5 @@
 import { Plus } from 'lucide-react';
+import { Link } from 'wouter';
 import { products, formatPrice, type Product } from '@/data/products';
 import { ProductArtwork } from '@/components/ProductArtwork';
 
@@ -12,10 +13,10 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
       <header className="collection-heading">
         <div>
           <span className="eyebrow">Feitas para acompanhar</span>
-          <h1>Tote Bags</h1>
+          <h1>Bucket Bags</h1>
         </div>
         <p>
-          Formas simples, tecidos honestos e espaço para tudo o que faz o seu dia.
+          Simple shapes, honest fabrics, and room for everything that makes up your day.  
         </p>
       </header>
       <section className="collection-grid" aria-label="Produtos da coleção">
@@ -25,14 +26,18 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
             key={product.id}
             style={{ animationDelay: `${index * 70}ms` }}
           >
-            <ProductArtwork product={product} />
+            <Link href={`/products/${product.id}`} aria-label={product.name}>
+              <ProductArtwork product={product} />
+            </Link>
             <div className="product-info">
               <div className="product-title-line">
-                <h2>{product.name}</h2>
+                <h2>
+                  <Link href={`/products/${product.id}`}>{product.name}</Link>
+                </h2>
                 <span className="product-price">{formatPrice(product.price)}</span>
               </div>
               <button className="add-button" type="button" onClick={() => onAdd(product)}>
-                <Plus size={13} /> Adicionar ao carrinho
+                <Plus size={13} /> Add to cart
               </button>
             </div>
           </article>
