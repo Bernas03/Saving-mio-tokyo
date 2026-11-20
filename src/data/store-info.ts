@@ -3,11 +3,11 @@
 export const storeInfo = {
   name: 'MIO TOKYO',
   legalName: 'BlueSpark LLC',
-  contactEmail: '[email de contacto]',
-  contactHours: '[dias e horário de atendimento]',
-  responseTime: '[prazo de resposta, ex.: 2 dias úteis]',
-  postalAddress: '[morada completa]',
-  vatNumber: '[número de identificação fiscal]',
+  contactEmail: 'info@mio-tokyo.com',
+  contactHours: '9h - 18h Dias úteis',
+  responseTime: '2 dias úteis',
+  postalAddress: '30 N Gould St Ste RSheridan, WY 82801',
+  vatNumber: '98-1929774',
   // Base de URL da transportadora para o rastreamento; o número da encomenda é acrescentado no fim.
   carrierName: '[nome da transportadora]',
   carrierTrackingUrl: 'https://[transportadora]/tracking?code=',
