@@ -311,7 +311,7 @@ export function ShippingPage() {
         <h2>Payment options</h2>
         <p>
           All payment options on mio-tokyo.com are protected with SSL encryption. Available: Credit card (AMEX,
-          Mastercard, Maestro, Visa), Apple Pay, Google Pay and Shop Pay.
+          Mastercard, Maestro, Visa), Apple Pay, Google Pay.
         </p>
       </section>
 
