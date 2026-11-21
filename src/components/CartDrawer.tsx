@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowRight, Minus, Plus, ShoppingBag, X } from 'lucide-react';
 import { Link } from 'wouter';
 import { formatPrice, type Product } from '@/data/products';
 import { ProductArtwork } from '@/components/ProductArtwork';
+import { startCheckout } from '@/lib/checkout';
 
 export type CartLine = {
   product: Product;
@@ -26,6 +27,9 @@ export function CartDrawer({
   onDecrement,
   onRemove,
 }: CartDrawerProps) {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
+
   useEffect(() => {
     if (!open) {
       return;
@@ -44,6 +48,19 @@ export function CartDrawer({
   }
 
   const subtotal = items.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
+
+  const handleCheckout = async () => {
+    setLoading(true);
+    setError('');
+    try {
+      await startCheckout(
+        items.map((line) => ({ id: line.product.id, quantity: line.quantity })),
+      );
+    } catch {
+      setError('Something went wrong. Please try again.');
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -118,8 +135,17 @@ export function CartDrawer({
                 <span>Subtotal</span>
                 <strong>{formatPrice(subtotal)}</strong>
               </div>
-              <button className="drawer-continue" type="button" onClick={onClose}>
-                Continue Shopping <ArrowRight size={15} />
+              <button
+                className="drawer-continue"
+                type="button"
+                onClick={handleCheckout}
+                disabled={loading}
+              >
+                {loading ? 'Please wait…' : 'Checkout'} <ArrowRight size={15} />
+              </button>
+              {error && <p className="shipping-note">{error}</p>}
+              <button className="remove-button" type="button" onClick={onClose}>
+                Continue shopping
               </button>
             </footer>
           </>

@@ -13,6 +13,7 @@ import { AboutPage } from '@/pages/AboutPage';
 import { ContactPage } from '@/pages/ContactPage';
 import { TrackingPage } from '@/pages/TrackingPage';
 import { ProductPage } from '@/pages/ProductPage';
+import { OrderCompletePage } from '@/pages/OrderCompletePage';
 import {
   PrivacyPage,
   RefundPage,
@@ -34,8 +35,8 @@ function NotFoundPage() {
     <main className="not-found">
       <div>
         <span className="eyebrow">MIO TOKYO / 夢鞄</span>
-        <h1>Este caminho não existe.</h1>
-        <Link href="/">Home Page</Link>
+        <h1>This page does not exist.</h1>
+        <Link href="/">Back to home</Link>
       </div>
     </main>
   );
@@ -121,6 +122,9 @@ function Storefront() {
         </Route>
         <Route path="/配送ポリシー">
           <ShippingPage />
+        </Route>
+        <Route path="/注文完了">
+          <OrderCompletePage />
         </Route>
         <Route>
           <NotFoundPage />
