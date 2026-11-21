@@ -10,7 +10,7 @@ const informationLinks: FooterLink[] = [
 ];
 
 const policyLinks: FooterLink[] = [
-  { label: '利用規約s', href: '/利用規約' }, //terms of servixe
+  { label: '利用規約', href: '/利用規約' }, //terms of servixe
   { label: 'プライバシーポリシー', href: '/プライバシーポリシー' }, //privacy
   { label: '返金ポリシー', href: '/返金ポリシー' }, //refund
   { label: '配送ポリシー', href: '/配送ポリシー' }, //shipping

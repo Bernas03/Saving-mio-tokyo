@@ -9,11 +9,11 @@ type StoreHeaderProps = {
 export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
   return (
     <header className="site-header">
-      <Link href="/" className="brand" aria-label="MIO TOKYO — home">
+      <Link href="/" className="brand" aria-label="MIO TOKYO — ホーム">
         <span className="brand-mark">M</span>
         <span className="brand-word">MIO TOKYO</span>
       </Link>
-      <nav className="header-nav" aria-label="Main navigation">
+      <nav className="header-nav" aria-label="メインナビゲーション">
         <Link href="/">トップページ</Link>
         <Link href="/コレクション">コレクション</Link>
       </nav>

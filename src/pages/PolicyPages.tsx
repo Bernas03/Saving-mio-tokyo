@@ -304,7 +304,7 @@ export function ShippingPage() {
       <section>
         <h2>送料</h2>
         <p>
-          すべての注文の送料は ¥2,500 です。
+          すべての注文の送料は ¥4,500 です。
         </p>
       </section>
 

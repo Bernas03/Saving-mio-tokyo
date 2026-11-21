@@ -19,7 +19,7 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
           シンプルなフォルム、素材本来の風合い、そして毎日のあらゆるシーンに寄り添う収納力。
         </p>
       </header>
-      <section className="collection-grid" aria-label="Collection products">
+      <section className="collection-grid" aria-label="コレクション商品">
         {products.map((product, index) => (
           <article
             className="product-card"

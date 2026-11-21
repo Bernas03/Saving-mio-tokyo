@@ -67,13 +67,13 @@ export function CartDrawer({
       <button
         className="cart-backdrop"
         type="button"
-        aria-label="Close cart"
+        aria-label="カートを閉じる"
         onClick={onClose}
       />
       <aside className="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
         <header className="drawer-header">
           <h2 id="cart-title">カート</h2>
-          <button className="icon-button" type="button" onClick={onClose} aria-label="Close cart">
+          <button className="icon-button" type="button" onClick={onClose} aria-label="カートを閉じる">
             <X size={21} strokeWidth={1.5} />
           </button>
         </header>

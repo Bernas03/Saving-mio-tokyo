@@ -22,7 +22,7 @@ export function HomePage() {
           </div>
         </div>
 
-        <div className="home-products" aria-label="Products">
+        <div className="home-products" aria-label="商品">
           <div className="home-products-grid">
             {products.map((product) => (
               <Link

@@ -4,8 +4,8 @@ import { storeInfo } from '@/data/store-info';
 export function AboutPage() {
   return (
     <InfoPage
-      eyebrow="About MIO TOKYO"
-      title="About us"
+      eyebrow="MIO TOKYO について"
+      title="私たちについて"
     >
       <section>
         <h2>について {storeInfo.name}</h2>
@@ -13,7 +13,7 @@ export function AboutPage() {
           {storeInfo.name} は、厳選された高品質な商品を、スムーズで透明性の高いショッピング体験とともにお届けすることを使命とするオンラインストアです。お気に入りの商品をいくつか取り扱う小さなプロジェクトとして始まり、少しずつ成長してきました。
         </p>
         <p>
-          私たちは、オンラインショッピングは誠実であり、予期せぬ事態がないものであるべきだと考えています。つまり、明確な価格、明確な 配送期間、そして迅速に対応してくれるカスタマーサポートです。
+          私たちは、オンラインショッピングは誠実であり、予期せぬ事態がないものであるべきだと考えています。つまり、明確な価格、明確な配送期間、そして迅速に対応してくれるカスタマーサポートです。
         </p>
       </section>
 
