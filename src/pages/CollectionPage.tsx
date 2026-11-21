@@ -12,11 +12,11 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
     <main className="collection-main">
       <header className="collection-heading">
         <div>
-          <span className="eyebrow">Made to keep you company</span>
-          <h1>Bucket Bags</h1>
+          <span className="eyebrow">いつもあなたのそばに</span>
+          <h1>バケットバッグ</h1>
         </div>
         <p>
-          Simple shapes, honest fabrics, and room for everything that makes up your day.
+          シンプルなフォルム、素材本来の風合い、そして毎日のあらゆるシーンに寄り添う収納力。
         </p>
       </header>
       <section className="collection-grid" aria-label="Collection products">
@@ -37,7 +37,7 @@ export function CollectionPage({ onAdd }: CollectionPageProps) {
                 <span className="product-price">{formatPrice(product.price)}</span>
               </div>
               <button className="add-button" type="button" onClick={() => onAdd(product)}>
-                <Plus size={13} /> Add to cart
+                <Plus size={13} /> カートに入れる
               </button>
             </div>
           </article>

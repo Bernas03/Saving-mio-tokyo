@@ -72,7 +72,7 @@ export function CartDrawer({
       />
       <aside className="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
         <header className="drawer-header">
-          <h2 id="cart-title">Cart</h2>
+          <h2 id="cart-title">カート</h2>
           <button className="icon-button" type="button" onClick={onClose} aria-label="Close cart">
             <X size={21} strokeWidth={1.5} />
           </button>
@@ -83,10 +83,10 @@ export function CartDrawer({
               <div className="empty-symbol">
                 <ShoppingBag size={27} strokeWidth={1.2} />
               </div>
-              <h3>Still empty</h3>
-              <p>We have a bag designed to accompany you through every day.</p>
+              <h3>まだ空です</h3>
+              <p>毎日に寄り添う、あなたのためのバッグをご用意しています。</p>
               <Link href="/コレクション" onClick={onClose}>
-                Discover the Collection
+                コレクションを見る
               </Link>
             </div>
           </div>
@@ -124,7 +124,7 @@ export function CartDrawer({
                       type="button"
                       onClick={() => onRemove(product.id)}
                     >
-                      Remove
+                      削除
                     </button>
                   </div>
                 </article>
@@ -132,7 +132,7 @@ export function CartDrawer({
             </div>
             <footer className="drawer-footer">
               <div className="subtotal-row">
-                <span>Subtotal</span>
+                <span>小計</span>
                 <strong>{formatPrice(subtotal)}</strong>
               </div>
               <button
@@ -141,11 +141,11 @@ export function CartDrawer({
                 onClick={handleCheckout}
                 disabled={loading}
               >
-                {loading ? 'Please wait…' : 'Checkout'} <ArrowRight size={15} />
+                {loading ? 'しばらくお待ちください…' : 'レジに進む'} <ArrowRight size={15} />
               </button>
               {error && <p className="shipping-note">{error}</p>}
               <button className="remove-button" type="button" onClick={onClose}>
-                Continue shopping
+                買い物を続ける
               </button>
             </footer>
           </>

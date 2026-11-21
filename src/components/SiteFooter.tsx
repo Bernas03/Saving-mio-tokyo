@@ -4,16 +4,16 @@ import { storeInfo } from '@/data/store-info';
 type FooterLink = { label: string; href: string };
 
 const informationLinks: FooterLink[] = [
-  { label: 'About us', href: '/私たちについて' },
-  { label: 'Contact', href: '/お問い合わせ' },
-  { label: 'Tracking', href: '/配送追跡' },
+  { label: '私たちについて', href: '/私たちについて' }, //about us
+  { label: 'お問い合わせ', href: '/お問い合わせ' }, //contact
+  { label: '配送追跡', href: '/配送追跡' }, //tracking
 ];
 
 const policyLinks: FooterLink[] = [
-  { label: 'Terms and Conditions', href: '/利用規約' },
-  { label: 'Privacy', href: '/プライバシーポリシー' },
-  { label: 'Refund', href: '/返金ポリシー' },
-  { label: 'Shipping', href: '/配送ポリシー' },
+  { label: '利用規約s', href: '/利用規約' }, //terms of servixe
+  { label: 'プライバシーポリシー', href: '/プライバシーポリシー' }, //privacy
+  { label: '返金ポリシー', href: '/返金ポリシー' }, //refund
+  { label: '配送ポリシー', href: '/配送ポリシー' }, //shipping
 ];
 
 function FooterColumn({ title, links }: { title: string; links: FooterLink[] }) {
@@ -40,13 +40,13 @@ export function SiteFooter() {
           <p className="footer-copyright">© {new Date().getFullYear()} {storeInfo.name}</p>
         </div>
         <nav className="footer-columns" aria-label="Rodapé">
-          <FooterColumn title="Information" links={informationLinks} />
-          <FooterColumn title="POLICIES" links={policyLinks} />
+          <FooterColumn title="情報" links={informationLinks} />
+          <FooterColumn title="ポリシー" links={policyLinks} />
           <div className="footer-column">
-            <h2 className="footer-column-title">COMPANY DETAILS</h2>
+            <h2 className="footer-column-title">会社概要</h2>
             <ul className="footer-company">
               <li>{storeInfo.legalName}</li>
-              <li>Registration No. {storeInfo.vatNumber}</li>
+              <li>登録番号 {storeInfo.vatNumber}</li>
               <li>{storeInfo.postalAddress}</li>
               <li>{storeInfo.contactEmail}</li>
             </ul>

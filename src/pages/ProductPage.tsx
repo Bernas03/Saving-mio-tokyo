@@ -11,9 +11,9 @@ const base = import.meta.env.BASE_URL;
 
 const description = (
   <>
-    A suede bucket-style tote with a braided handle and a round charm. The adjustable strap lets you wear it over the shoulder or across the body. The interior is lined in polyester and has no inner pocket.
+    編み込みハンドルと丸いチャームが特徴の、スエード調のバケット型トートバッグです。調節可能なストラップ付きで、肩掛けや斜め掛けの2WAYでお使いいただけます。内側はポリエステル素材の裏地付きで、内ポケットはありません。
     <br /><br />
-    <strong>Dimensions:</strong> 22 cm (width) × 17 cm (depth) × 19 cm (height).
+    <strong>サイズ：</strong>幅22 cm × 奥行17 cm × 高さ19 cm
   </>
 );
 
@@ -26,8 +26,8 @@ export function ProductPage({ onAdd }: ProductPageProps) {
     return (
       <main className="product-page">
         <div>
-          <p>Product not found.</p>
-          <Link href="/collections/夢鞄">Back to the collection</Link>
+          <p>商品が見つかりません</p>
+          <Link href="/collections/夢鞄">コレクションに戻る</Link>
         </div>
       </main>
     );
@@ -66,7 +66,7 @@ export function ProductPage({ onAdd }: ProductPageProps) {
           type="button"
           onClick={() => onAdd(product)}
         >
-          <Plus size={14} /> Add to cart
+          <Plus size={14} /> カートに入れる
         </button>
       </div>
     </main>

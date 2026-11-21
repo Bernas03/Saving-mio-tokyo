@@ -1,132 +1,137 @@
 import { InfoPage } from '@/components/InfoPage';
 import { storeInfo } from '@/data/store-info';
 
-// Textos legais em rascunho. Os valores entre [ ] têm de ser confirmados
-// pela empresa e revistos por um profissional jurídico antes de publicar.
+// 法的文書の草案です。[ ] 内の値は会社が確認し、
+// 公開前に法律の専門家が見直す必要があります。
 
 export function TermsPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Termos e condições">
+    <InfoPage eyebrow="法的情報" title="利用規約">
       <section>
         <p>
-          This website is operated by {storeInfo.legalName} (Company No. {storeInfo.vatNumber}), registered at{' '}
-          {storeInfo.postalAddress}. Throughout the site, "we", "us" and "our" refer to {storeInfo.name}.{' '}
-          {storeInfo.name} offers this website, including all information, tools and services available from it,
-          conditioned upon your acceptance of all terms, conditions, policies and notices stated here. By visiting
-          our site and/or purchasing from us, you engage in our "Service" and agree to these Terms of Service,
-          including all policies referenced herein. Please read them carefully; if you do not agree, you may not
-          use the Service.
+          本ウェブサイトは {storeInfo.legalName}（会社番号: {storeInfo.vatNumber}）が運営しており、
+          所在地は {storeInfo.postalAddress} です。本サイト全体で「当社」「私たち」「当社の」は{' '}
+          {storeInfo.name} を指します。{storeInfo.name} は、本サイトおよびそこから利用できるすべての情報、
+          ツール、サービスを、ここに記載されたすべての利用規約、方針、通知への同意を条件として提供します。
+          本サイトを訪問する、および/または当社から購入することにより、お客様は当社の「サービス」を利用し、
+          本規約（ここで参照されるすべての方針を含む）に同意したものとみなされます。よくお読みください。
+          同意いただけない場合は、サービスを利用できません。
         </p>
       </section>
       <section>
-        <h2>1 – Online use conditions</h2>
+        <h2>1 – オンライン利用の条件</h2>
         <p>
-          You confirm you are of legal age in your state or province, or have consent for any minor dependents to
-          use the website. You may not use our products for any illegal or unauthorized purpose, nor violate any
-          laws in your jurisdiction, nor transmit any viruses or destructive code. A breach results in immediate
-          termination of your Services.
+          お客様は、お住まいの州または都道府県で法定年齢に達していること、または未成年の扶養家族が
+          本サイトを利用することについて同意を得ていることを確認するものとします。当社の製品を違法または
+          許可されていない目的で使用すること、お住まいの管轄地域の法律に違反すること、またはウイルスや
+          有害なコードを送信することはできません。違反した場合、直ちにサービスの利用が終了します。
         </p>
       </section>
       <section>
-        <h2>2 – General conditions</h2>
+        <h2>2 – 一般条件</h2>
         <p>
-          We reserve the right to refuse service to anyone at any time. Your content (excluding credit card
-          information) may be transferred unencrypted; credit card information is always encrypted. You agree not
-          to reproduce, copy, sell or exploit any portion of the Service without our written permission.
+          当社は、いつでも、どの方に対してもサービスの提供を拒否する権利を留保します。お客様のコンテンツ
+          （クレジットカード情報を除く）は暗号化されずに送信される場合があります。クレジットカード情報は
+          常に暗号化されます。当社の書面による許可なく、サービスのいかなる部分も複製、コピー、販売、
+          または利用しないことに同意するものとします。
         </p>
       </section>
       <section>
-        <h2>3 – Accuracy of information</h2>
+        <h2>3 – 情報の正確性</h2>
         <p>
-          We are not responsible if information on this site is not accurate, complete or current; it is provided
-          for general information only. We reserve the right to modify the contents at any time without obligation
-          to update.
+          本サイトの情報が正確、完全、または最新でない場合でも、当社は責任を負いません。情報は一般的な
+          案内のみを目的として提供されています。当社は、更新の義務を負うことなく、いつでも内容を変更する
+          権利を留保します。
         </p>
       </section>
       <section>
-        <h2>4 – Modifications to service and prices</h2>
+        <h2>4 – サービスおよび価格の変更</h2>
         <p>
-          Prices are subject to change. We may modify or discontinue the Service at any time. The presentation of
-          products is a non-binding online catalogue; clicking "Buy" makes an offer to enter a purchase agreement,
-          and an automated confirmation email does not constitute acceptance. Statutory warranty rights apply.
+          価格は変更される場合があります。当社は、いつでもサービスを変更または終了することがあります。
+          製品の掲載はオンラインでの拘束力のないカタログです。「購入」をクリックすることは購入契約を
+          締結する申し込みとなり、自動確認メールは承諾を意味しません。法定の保証権は適用されます。
         </p>
       </section>
       <section>
-        <h2>5 – Products or services</h2>
+        <h2>5 – 製品またはサービス</h2>
         <p>
-          Certain products may be available online only and in limited quantities, returnable per our refund
-          policy. We try to display colours and images accurately but cannot guarantee your screen's display.
-          Products ship directly from our suppliers; any customs duties or import taxes are the consumer's
-          responsibility and are made clear in advance where applicable.
+          一部の製品はオンラインでのみ、また数量限定で提供される場合があり、返品は返金ポリシーに従います。
+          色や画像を正確に表示するよう努めていますが、お客様の画面での表示を保証することはできません。
+          製品はサプライヤーから直接発送されます。関税または輸入税は消費者の負担となり、該当する場合は
+          事前に明記されます。
         </p>
       </section>
       <section>
-        <h2>6 – Billing & account accuracy</h2>
+        <h2>6 – 請求およびアカウント情報の正確性</h2>
         <p>
-          We may refuse or limit any order. You agree to provide current, complete and accurate purchase and
-          account information and to update it promptly so we can complete your transactions.
+          当社は、いかなる注文も拒否または制限することがあります。お客様は、取引を完了できるよう、
+          最新で、完全かつ正確な購入およびアカウント情報を提供し、速やかに更新することに同意するものとします。
         </p>
       </section>
       <section>
-        <h2>7 – Optional tools & 8 – Third-party links</h2>
+        <h2>7 – 任意のツール ・ 8 – 第三者リンク</h2>
         <p>
-          Third-party tools are provided "as is" without warranty; use at your own risk. Third-party links may lead
-          to sites not affiliated with us; complaints about third-party products go directly to that party.
+          第三者のツールは保証なしで「現状のまま」提供されます。ご利用はご自身の責任で行ってください。
+          第三者のリンクは、当社と提携していないサイトに繋がる場合があります。第三者の製品に関する苦情は、
+          その当事者に直接お申し立てください。
         </p>
       </section>
       <section>
-        <h2>9 – User submissions</h2>
+        <h2>9 – ユーザーからの投稿</h2>
         <p>
-          If you send ideas or suggestions, we may use them without restriction or compensation. We may remove
-          content we deem unlawful or objectionable. You are responsible for the accuracy of your comments.
+          ご意見やご提案をいただいた場合、当社は制限なく、報酬なしでそれらを利用することがあります。
+          違法または不適切と判断したコンテンツを削除することがあります。お客様は、コメントの正確性について
+          責任を負います。
         </p>
       </section>
       <section>
-        <h2>10 – Personal information</h2>
-        <p>Your submission of personal information is governed by our Privacy Policy, available at mio-tokyo.com.</p>
-      </section>
-      <section>
-        <h2>11 – Errors and omissions</h2>
+        <h2>10 – 個人情報</h2>
         <p>
-          The site may contain errors or omissions on descriptions, prices, promotions, shipping and availability.
-          We may correct these and cancel orders if information is inaccurate.
+          個人情報の提供は、mio-tokyo.com に掲載されている当社のプライバシーポリシーに従います。
         </p>
       </section>
       <section>
-        <h2>12 – Prohibited uses</h2>
+        <h2>11 – 誤りおよび脱落</h2>
         <p>
-          You may not use the site for unlawful purposes, to violate laws, infringe IP rights, harass or
-          discriminate, submit false information, upload viruses, collect others' data, spam or phish, or interfere
-          with security features.
+          本サイトには、商品説明、価格、キャンペーン、配送、在庫状況に関する誤りや脱落が含まれる場合があります。
+          当社はこれらを修正することができ、情報が不正確な場合は注文をキャンセルすることがあります。
         </p>
       </section>
       <section>
-        <h2>13 – Disclaimer; limitation of liability</h2>
+        <h2>12 – 禁止事項</h2>
         <p>
-          We do not guarantee the Service will be uninterrupted or error-free. The Service and all products are
-          provided "as is" and "as available" without any warranty, express or implied, to the extent permitted by
-          law.
+          お客様は、違法な目的で本サイトを利用すること、法律に違反すること、知的財産権を侵害すること、
+          嫌がらせや差別を行うこと、虚偽の情報を提出すること、ウイルスをアップロードすること、他者のデータを
+          収集すること、スパムやフィッシングを行うこと、またはセキュリティ機能を妨害することはできません。
         </p>
       </section>
       <section>
-        <h2>14 – Indemnification · 15 – Severability · 16 – Termination</h2>
+        <h2>13 – 免責事項、責任の制限</h2>
         <p>
-          You agree to indemnify {storeInfo.legalName} and its affiliates against claims arising from your breach of
-          these Terms. If any provision is unenforceable, the rest remain in effect. These Terms remain valid until
-          terminated by you or by us.
+          当社は、サービスが中断されない、またはエラーがないことを保証するものではありません。サービスおよび
+          すべての製品は、法律で許される範囲で、明示または黙示を問わずいかなる保証もなく、「現状のまま」および
+          「提供可能な状態で」提供されます。
         </p>
       </section>
       <section>
-        <h2>17 – Entire agreement · 18 – Governing law</h2>
+        <h2>14 – 補償 · 15 – 分離可能性 · 16 – 終了</h2>
         <p>
-          These Terms constitute the entire agreement between you and us, governed by and interpreted under the laws
-          of the State of Wyoming.
+          お客様は、本規約への違反から生じる請求について、{storeInfo.legalName} およびその関連会社を
+          補償することに同意するものとします。いずれかの条項が執行不能の場合でも、残りの条項は有効です。
+          本規約は、お客様または当社によって終了されるまで有効です。
         </p>
       </section>
       <section>
-        <h2>19 – Changes · 20 – Contact</h2>
+        <h2>17 – 完全合意 · 18 – 準拠法</h2>
         <p>
-          We may update these Terms; continued use constitutes acceptance. Questions: {storeInfo.contactEmail}.
+          本規約は、お客様と当社の間の完全な合意を構成し、ワイオミング州の法律に従って解釈されます。
+        </p>
+      </section>
+      <section>
+        <h2>19 – 変更 · 20 – お問い合わせ</h2>
+        <p>
+          当社は本規約を更新することがあります。引き続き利用された場合、変更に同意したものとみなされます。
+          ご質問は {storeInfo.contactEmail} までお問い合わせください。
         </p>
       </section>
     </InfoPage>
@@ -135,99 +140,99 @@ export function TermsPage() {
 
 export function PrivacyPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de privacidade">
+    <InfoPage eyebrow="法的情報" title="プライバシーポリシー">
       <section>
         <p>
-          <strong>Last updated: 20/11/2026</strong>
+          <strong>最終更新日: 2026/11/20</strong>
         </p>
         <p>
-          <strong>{storeInfo.legalName}</strong> operates {storeInfo.name} (mio-tokyo.com), including all related
-          information, features, products and services (the "Services"). This Privacy Policy describes how we
-          collect, use and disclose your personal information when you use the Services or communicate with us.{' '}
+          <strong>{storeInfo.legalName}</strong> は {storeInfo.name}（mio-tokyo.com）を運営しており、
+          関連する情報、機能、製品、サービス（「サービス」）を含みます。本プライバシーポリシーは、
+          お客様がサービスを利用する際、または当社と連絡を取る際に、当社が個人情報をどのように収集、
+          利用、開示するかを説明するものです。{' '}
         </p>
       </section>
 
       <section>
-        <h2>Personal information we collect</h2>
+        <h2>収集する個人情報</h2>
         <ul>
           <li>
-            <strong>Contact details</strong> — name, address, billing/shipping address, phone, email.
+            <strong>連絡先情報</strong> — 氏名、住所、請求先・配送先住所、電話番号、メールアドレス。
           </li>
           <li>
-            <strong>Financial information</strong> — payment card details, transactions, payment method (card data
-            encrypted).
+            <strong>金融情報</strong> — 支払いカードの情報、取引、支払い方法（カード情報は暗号化されます）。
           </li>
           <li>
-            <strong>Account information</strong> — username, password, preferences, settings.
+            <strong>アカウント情報</strong> — ユーザー名、パスワード、設定、環境設定。
           </li>
           <li>
-            <strong>Transaction information</strong> — items viewed, added, purchased, returned or cancelled.
+            <strong>取引情報</strong> — 閲覧、カート追加、購入、返品、キャンセルされた商品に関する情報。
           </li>
           <li>
-            <strong>Communications</strong> — what you share when contacting customer service.
+            <strong>コミュニケーション</strong> — カスタマーサービスに連絡する際に共有される内容。
           </li>
           <li>
-            <strong>Device & usage data</strong> — device, browser, IP address, interaction with the Services.
+            <strong>端末および利用データ</strong> — 端末、ブラウザ、IPアドレス、サービスとのやり取り。
           </li>
         </ul>
       </section>
 
       <section>
-        <h2>How we use your information</h2>
+        <h2>お客様の情報の利用方法</h2>
         <ul>
           <li>
-            <strong>Provide & improve the Services</strong> — fulfil orders, process payments, manage your account,
-            organize shipments, facilitate returns, personalize your experience.
+            <strong>サービスの提供と改善</strong> — 注文の処理、支払いの処理、アカウントの管理、配送の手配、
+            返品の対応、お客様の体験の個別化。
           </li>
           {/* TODO: confirmar os itens que aparecem entre "Provide & improve" e "Marketing" — não estão nas imagens */}
           <li>
-            <strong>Marketing</strong> — promotional messages via email/SMS/post and online ads based on your activity
-            (unsubscribe any time).
+            <strong>マーケティング</strong> — メール、SMS、郵送によるプロモーションメッセージ、およびお客様の
+            利用状況に基づくオンライン広告（いつでも配信停止できます）。
           </li>
           <li>
-            <strong>Security & fraud prevention</strong> — verify your account and detect fraud.
+            <strong>セキュリティおよび不正防止</strong> — アカウントの確認および不正の検出。
           </li>
           <li>
-            <strong>Communication & legal reasons</strong> — support and compliance with applicable law.
+            <strong>連絡および法的理由</strong> — サポートの提供、および適用される法律への準拠。
           </li>
         </ul>
       </section>
 
       <section>
-        <h2>Disclosure and service providers</h2>
+        <h2>開示および サービスプロバイダー</h2>
         <p>
-          We may share personal data with service providers that help us run the store, including
-          payment processing (<a href="https://stripe.com/privacy" target="_blank" rel="noreferrer">Stripe</a>),
-          website hosting (<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Pages</a>),
-          checkout infrastructure (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">Cloudflare</a>),
-          shipping carriers and customer support. Payments are processed by Stripe; we do not store your full
-          card details. We may also disclose data where legally required.
+          当社は、ストアの運営を支援するサービスプロバイダーと個人データを共有することがあります。これには、
+          支払い処理（<a href="https://stripe.com/privacy" target="_blank" rel="noreferrer">Stripe</a>）、
+          ウェブサイトのホスティング（<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Pages</a>）、
+          チェックアウトの基盤（<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">Cloudflare</a>）、
+          配送業者、カスタマーサポートが含まれます。支払いはStripeが処理し、当社はカードの詳細を
+          全て保存することはありません。法律で義務付けられている場合にも、データを開示することがあります。
         </p>
       </section>
 
       <section>
-        <h2>Your rights</h2>
+        <h2>お客様の権利</h2>
         <p>
-          Depending on where you live, you may access, delete, correct and port your data, and (UK/EEA) object,
-          restrict and withdraw consent. We will not discriminate for exercising these rights and may verify your
-          identity. Exercise them via the contact below.
+          お住まいの地域によっては、お客様はご自身のデータへのアクセス、削除、訂正、移転を求めることができ、
+          （英国/EEAの場合）処理への異議申し立て、制限、同意の撤回を行うことができます。これらの権利を行使したことを
+          理由に差別することはなく、ご本人確認を行うことがあります。下記の連絡先から権利を行使してください。
         </p>
       </section>
 
       <section>
-        <h2>Children's data · Security · International transfers</h2>
+        <h2>子どものデータ · セキュリティ · 国際的な移転</h2>
         <p>
-          The Services are not intended for children under the age of majority. No security measure is fully
-          impenetrable. We may process data outside your country; for transfers outside the EEA/UK we rely on
-          recognized mechanisms (Standard Contractual Clauses).
+          本サービスは成年に達していない方を対象としていません。完全に侵入不可能なセキュリティ対策は
+          存在しません。お客様の国以外でデータを処理することがあります。EEA/英国外への移転については、
+          認められた仕組み（標準契約条項）に依拠します。
         </p>
       </section>
 
       <section>
-        <h2>Complaints & contact</h2>
+        <h2>苦情およびお問い合わせ</h2>
         <p>
-          Questions or complaints about how we process your data? Contact {storeInfo.contactEmail}. You may also lodge
-          a complaint with your local data protection authority.
+          当社がお客様のデータをどのように処理するかについて、ご質問や苦情はありますか？ {storeInfo.contactEmail} まで
+          ご連絡ください。お住まいの地域の個人情報保護当局に苦情を申し立てることもできます。
         </p>
       </section>
     </InfoPage>
@@ -236,50 +241,49 @@ export function PrivacyPage() {
 
 export function RefundPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de reembolso">
+    <InfoPage eyebrow="法的情報" title="返金ポリシー">
       <section>
         <p>
-          <strong>Important:</strong> we do not offer free returns — the customer is responsible for the return costs.
+          <strong>重要:</strong> 当社は無料返品を提供していません。返品の送料はお客様の負担となります。
         </p>
       </section>
 
       <section>
-        <h2>Can I return my order?</h2>
+        <h2>注文を返品できますか？</h2>
         <p>
-          Yes, within <strong>30 days</strong> of receipt, provided: the item is in original condition with all parts
-          and packaging; shows only signs of normal use (no damage from negligence or misuse); hygiene-related products
-          are returned properly cleaned; and the customer bears the return shipping costs.
+          はい、商品の受領から <strong>30日以内</strong> であれば可能です。ただし、以下の条件を満たす必要があります。
+          商品が付属品および梱包を含め元の状態であること。通常の使用による痕跡のみがあり、過失や誤用による
+          損傷がないこと。衛生に関わる製品は適切に清潔にして返送すること。返送料はお客様が負担すること。
         </p>
         <p>
-          Returns are processed within <strong>7 business days</strong>. {storeInfo.legalName} / {storeInfo.name} may
-          refuse returned items that show use or damage not attributable to us.
-        </p>
-      </section>
-
-      <section>
-        <h2>How do I return my order?</h2>
-        <p>
-          Email <strong>{storeInfo.contactEmail}</strong> with: order number, reason, a photo (if damaged), full name
-          and address. <strong>Important:</strong> do not send the return to the sender's address — we provide the
-          correct return address after review.
+          返品は <strong>7営業日以内</strong> に処理されます。{storeInfo.legalName} / {storeInfo.name} は、
+          当社に起因しない使用または損傷が見られる返品商品を受け取らないことがあります。
         </p>
       </section>
 
       <section>
-        <h2>Cancellation — Right of withdrawal</h2>
+        <h2>注文はどのように返品しますか？</h2>
         <p>
-          Private customers may cancel within <strong>30 calendar days</strong> of receiving the last item. Since orders
-          are processed immediately, they cannot be cancelled once in transit; in that case follow the return procedure
-          after receipt. You may inform us of your intention to cancel by a clear written request via email.
+          以下の内容を添えて <strong>{storeInfo.contactEmail}</strong> にメールしてください。注文番号、理由、
+          （損傷がある場合は）写真、氏名および住所。<strong>重要:</strong> 返品を送り主の住所に送らないでください。
+          確認後、正しい返送先住所をお知らせします。
         </p>
       </section>
 
       <section>
-        <h2>After cancellation</h2>
+        <h2>キャンセル — 撤回の権利</h2>
         <p>
-          We refund all payments received (excluding extra cost of a more expensive than standard delivery), via the
-          same payment method, within a maximum of <strong>30 days</strong> of receiving the returned products. Keep
-          proof of return shipment.
+          個人のお客様は、最後の商品を受け取ってから <strong>30暦日以内</strong> にキャンセルできます。
+          注文は直ちに処理されるため、配送中にはキャンセルできません。その場合は、受領後に返品手続きに従ってください。
+          キャンセルの意思は、メールで明確な書面により通知してください。
+        </p>
+      </section>
+
+      <section>
+        <h2>キャンセル後</h2>
+        <p>
+          当社は、受け取ったすべての支払いを（標準配送より高い配送料を除き）、同じ支払い方法で、返品商品を受け取ってから
+          最大 <strong>30日以内</strong> に返金します。返送の証明を保管してください。
         </p>
       </section>
     </InfoPage>
@@ -288,47 +292,46 @@ export function RefundPage() {
 
 export function ShippingPage() {
   return (
-    <InfoPage eyebrow="Legal" title="Política de envio">
+    <InfoPage eyebrow="法的情報" title="配送ポリシー">
       <section>
-        <h2>Estimated delivery times</h2>
+        <h2>推定配送期間</h2>
         <p>
-          Processing takes <strong>1 to 2 business days</strong>. Once shipped, average delivery is{' '}
-          <strong>7 to 12 business days</strong>. Orders placed Friday afternoon or over the weekend may take a
-          little longer to process.
+          処理には <strong>1〜2営業日</strong> かかります。発送後、平均配送期間は{' '}
+          <strong>7〜12営業日</strong> です。金曜日の午後や週末に行われた注文は、処理に少し時間がかかる場合があります。
         </p>
       </section>
 
       <section>
-        <h2>Shipping costs</h2>
+        <h2>送料</h2>
         <p>
-          Shipping costs ¥4500 on all orders.
+          すべての注文の送料は ¥2,500 です。
         </p>
       </section>
 
       {/* TODO: confirmar se existem secções entre "Shipping costs" e "Payment options" — não estão nas imagens */}
 
       <section>
-        <h2>Payment options</h2>
+        <h2>支払い方法</h2>
         <p>
-          All payment options on mio-tokyo.com are protected with SSL encryption. Available: Credit card (AMEX,
-          Mastercard, Maestro, Visa), Apple Pay, Google Pay.
+          mio-tokyo.com のすべての支払い方法は SSL 暗号化で保護されています。利用可能な方法: クレジットカード
+          （AMEX、Mastercard、Maestro、Visa）、Apple Pay、Google Pay。
         </p>
       </section>
 
       <section>
-        <h2>Origin & delivery</h2>
+        <h2>出荷元と配送</h2>
         <p>
-          To offer fair prices, we work directly with our suppliers, so delivery times may be longer than with local
-          stock. Any customs duties or import taxes are the consumer's responsibility. During high order volume there
-          may be some delay; we ship as soon as possible and keep you informed.
+          適正な価格を提供するため、当社はサプライヤーと直接取引しています。そのため、現地在庫の場合よりも
+          配送に時間がかかることがあります。関税または輸入税は消費者の負担となります。注文が集中する時期には
+          遅れが生じることがあります。できるだけ早く発送し、随時お知らせします。
         </p>
       </section>
 
       <section>
-        <h2>Contact</h2>
+        <h2>お問い合わせ</h2>
         <p>
-          Want priority shipping or have a question? Contact <strong>{storeInfo.contactEmail}</strong> — our customer
-          service is happy to help.
+          優先配送をご希望ですか、またはご質問がありますか？ <strong>{storeInfo.contactEmail}</strong> まで
+          ご連絡ください。カスタマーサービスがお手伝いします。
         </p>
       </section>
     </InfoPage>

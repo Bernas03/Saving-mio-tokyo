@@ -28,20 +28,20 @@ export function ContactPage() {
 
   return (
     <InfoPage
-      eyebrow="Get in touch"
-      title="Contact"
-      intro="Do you have a question about an order or about our bags? Write to us."
+      eyebrow="ぜひお気軽にご相談ください"
+      title="お問い合わせ"
+      intro="ご注文やバッグについてご質問はございますか？お気軽にお問い合わせください。"
     >
       <section className="contact-details">
-        <h2>Contact details</h2>
+        <h2>お問い合わせ先</h2>
         <dl>
-          <dt>Email</dt>
+          <dt>メールアドレス</dt>
           <dd>{storeInfo.contactEmail}</dd>
-          <dt>Hours</dt>
+          <dt>営業時間</dt>
           <dd>{storeInfo.contactHours}</dd>
-          <dt>Response time</dt>
+          <dt>返信時間</dt>
           <dd>{storeInfo.responseTime}</dd>
-          <dt>Address</dt>
+          <dt>住所</dt>
           <dd>{storeInfo.postalAddress}</dd>
         </dl>
       </section>

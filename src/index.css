@@ -1320,3 +1320,12 @@ a {
     padding-top: 32px;
   }
 }
+
+.home-split h1 .hero-line {
+  display: block;
+  white-space: nowrap;
+}
+
+.home-split h1 em.hero-line {
+  color: #a25f49;
+}

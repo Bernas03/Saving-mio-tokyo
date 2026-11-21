@@ -35,8 +35,8 @@ function NotFoundPage() {
     <main className="not-found">
       <div>
         <span className="eyebrow">MIO TOKYO / 夢鞄</span>
-        <h1>This page does not exist.</h1>
-        <Link href="/">Back to home</Link>
+        <h1>このページは存在しません.</h1>
+        <Link href="/">ホームに戻る</Link>
       </div>
     </main>
   );

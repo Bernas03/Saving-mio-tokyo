@@ -8,32 +8,31 @@ export function TrackingPage() {
 
   return (
     <InfoPage
-      eyebrow="Track your order"
-      title="Tracking"
-      intro="To find out where your order is, send us an email with your order number."
+      eyebrow="荷物の行方をチェック"
+      title="配送追跡"
+      intro="ご注文商品の配送状況を確認されたい場合は、ご注文番号を明記のうえ、メールにてお問い合わせください。"
     >
       <section>
-        <h2>How to request tracking</h2>
+        <h2>追跡の依頼方法</h2>
         <p>
-          Send an email to <strong>{storeInfo.contactEmail}</strong> with this subject:
+          以下の件名で、<strong>{storeInfo.contactEmail}</strong>までメールをお送りください：
         </p>
         <p>
-          <strong>tracking - order number</strong>
+          <strong>注文番号</strong>
         </p>
-        <p>For example: tracking - 12345</p>
+        <p>記入例：注文番号 – 12345</p>
                 <p>
           <button className="button-primary" type="button" onClick={copyEmail}>
-            Copy email address
+            メールアドレスをコピー
           </button>
         </p>
-        <p>We will reply {storeInfo.responseTime}.</p>
+        <p>{storeInfo.responseTime}以内にご返信いたします。</p>
       </section>
 
       <section>
-        <h2>Didn't receive a number?</h2>
+        <h2>注文番号が届いていませんか？</h2>
         <p>
-          Check your spam folder. If you still get no reply, contact us through our{' '}
-          <a href="/お問い合わせ">contact</a> page.
+          迷惑メールフォルダをご確認ください。それでも返信が届かない場合は、<a href="/お問い合わせ">お問い合わせ</a>ページからご連絡ください。
         </p>
       </section>
     </InfoPage>

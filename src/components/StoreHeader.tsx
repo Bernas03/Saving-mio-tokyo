@@ -14,8 +14,8 @@ export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
         <span className="brand-word">MIO TOKYO</span>
       </Link>
       <nav className="header-nav" aria-label="Main navigation">
-        <Link href="/">Home Page</Link>
-        <Link href="/コレクション">Collection</Link>
+        <Link href="/">トップページ</Link>
+        <Link href="/コレクション">コレクション</Link>
       </nav>
       <button
         className="cart-trigger"
@@ -23,7 +23,7 @@ export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
         onClick={onOpenCart}
         aria-label={`Open cart, ${itemCount} ${itemCount === 1 ? 'item' : 'items'}`}
       >
-        <span>Cart</span>
+        <span>カート</span>
         <ShoppingBag size={17} strokeWidth={1.5} aria-hidden="true" />
         <span className="cart-count">{itemCount}</span>
       </button>

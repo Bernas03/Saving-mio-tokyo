@@ -4,21 +4,21 @@ import { storeInfo } from '@/data/store-info';
 export function OrderCompletePage() {
   return (
     <InfoPage
-      eyebrow="Order complete"
-      title="Thank you for your order"
-      intro="Your payment was received."
+      eyebrow="ご注文完了"
+      title="ご注文ありがとうございます"
+      intro="お支払いを確認いたしました。"
     >
       <section>
-        <h2>Questions about your order?</h2>
+        <h2>ご注文についてご不明な点はございますか？</h2>
         <p>
-          Write to <strong>{storeInfo.contactEmail}</strong> and we will reply {storeInfo.responseTime}.
+          ご注文についてご不明な点がございましたら、<strong>{storeInfo.contactEmail}</strong>までご連絡ください。{storeInfo.responseTime}以内にご返信いたします。
         </p>
       </section>
 
       <section>
-        <h2>Tracking</h2>
+        <h2>配送追跡</h2>
         <p>
-          To check where your order is, go to our <a href="/配送追跡">tracking</a> page.
+          ご注文商品の配送状況を確認するには、<a href="/配送追跡">配送追跡</a>ページをご覧ください。
         </p>
       </section>
     </InfoPage>
