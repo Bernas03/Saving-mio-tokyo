@@ -4,16 +4,16 @@ import { storeInfo } from '@/data/store-info';
 type FooterLink = { label: string; href: string };
 
 const informationLinks: FooterLink[] = [
-  { label: 'About us', href: '/sobre-nos' },
-  { label: 'Contact', href: '/contacto' },
-  { label: 'Tracking', href: '/rastreamento' },
+  { label: 'About us', href: '/私たちについて' },
+  { label: 'Contact', href: '/お問い合わせ' },
+  { label: 'Tracking', href: '/配送追跡' },
 ];
 
 const policyLinks: FooterLink[] = [
-  { label: 'Terms and Conditions', href: '/termos-e-condicoes' },
-  { label: 'Privacy', href: '/politica-de-privacidade' },
-  { label: 'Refund', href: '/politica-de-reembolso' },
-  { label: 'Shipping', href: '/politica-de-envio' },
+  { label: 'Terms and Conditions', href: '/利用規約' },
+  { label: 'Privacy', href: '/プライバシーポリシー' },
+  { label: 'Refund', href: '/返金ポリシー' },
+  { label: 'Shipping', href: '/配送ポリシー' },
 ];
 
 function FooterColumn({ title, links }: { title: string; links: FooterLink[] }) {

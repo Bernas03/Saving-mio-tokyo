@@ -42,7 +42,7 @@ export function AboutPage() {
         <p>
           To keep prices competitive, we work directly with suppliers and ship to several
           countries. Average delivery times and all the details are on our{' '}
-          <a href="/shipping-policy">shipping policy</a> page.
+          <a href="/配送ポリシー">shipping policy</a> page.
         </p>
       </section>
 

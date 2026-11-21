@@ -9,19 +9,19 @@ type StoreHeaderProps = {
 export function StoreHeader({ itemCount, onOpenCart }: StoreHeaderProps) {
   return (
     <header className="site-header">
-      <Link href="/" className="brand" aria-label="MIO TOKYO — página inicial">
+      <Link href="/" className="brand" aria-label="MIO TOKYO — home">
         <span className="brand-mark">M</span>
         <span className="brand-word">MIO TOKYO</span>
       </Link>
-      <nav className="header-nav" aria-label="Navegação principal">
+      <nav className="header-nav" aria-label="Main navigation">
         <Link href="/">Home Page</Link>
-        <Link href="/collections/夢鞄">Collection</Link>
+        <Link href="/コレクション">Collection</Link>
       </nav>
       <button
         className="cart-trigger"
         type="button"
         onClick={onOpenCart}
-        aria-label={`open cart, ${itemCount} ${itemCount === 1 ? 'artigo' : 'artigos'}`}
+        aria-label={`Open cart, ${itemCount} ${itemCount === 1 ? 'item' : 'items'}`}
       >
         <span>Cart</span>
         <ShoppingBag size={17} strokeWidth={1.5} aria-hidden="true" />

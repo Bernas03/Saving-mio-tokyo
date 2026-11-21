@@ -15,7 +15,7 @@ export function HomePage() {
             A small collection of bags. Each one has its own description, materials and dimensions.
           </p>
           <div className="hero-actions">
-            <Link href="/collections/夢鞄" className="button-primary">
+            <Link href="/コレクション" className="button-primary">
               View the collection <ArrowRight size={15} />
             </Link>
           </div>
@@ -26,7 +26,7 @@ export function HomePage() {
             {products.map((product) => (
               <Link
                 key={product.id}
-                href={`/products/${product.id}`}
+                href={`/商品/${product.id}`}
                 className="home-product-card"
                 aria-label={product.name}
               >

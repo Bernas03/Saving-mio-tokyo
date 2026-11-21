@@ -68,7 +68,7 @@ export function CartDrawer({
               </div>
               <h3>Still empty</h3>
               <p>We have a bag designed to accompany you through every day.</p>
-              <Link href="/collections/夢鞄" onClick={onClose}>
+              <Link href="/コレクション" onClick={onClose}>
                 Discover the Collection
               </Link>
             </div>
@@ -82,10 +82,10 @@ export function CartDrawer({
                   <div className="cart-item-details">
                     <h3>{product.name}</h3>
                     <p>{formatPrice(product.price)}</p>
-                    <div className="quantity-control" aria-label={`Quantidade de ${product.name}`}>
+                    <div className="quantity-control" aria-label={`Quantity of ${product.name}`}>
                       <button
                         type="button"
-                        aria-label={`Diminuir quantidade de ${product.name}`}
+                        aria-label={`Decrease quantity of ${product.name}`}
                         onClick={() => onDecrement(product.id)}
                       >
                         <Minus size={12} />
@@ -93,7 +93,7 @@ export function CartDrawer({
                       <span>{quantity}</span>
                       <button
                         type="button"
-                        aria-label={`Aumentar quantidade de ${product.name}`}
+                        aria-label={`Increase quantity of ${product.name}`}
                         onClick={() => onIncrement(product.id)}
                       >
                         <Plus size={12} />

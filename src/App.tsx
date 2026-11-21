@@ -95,34 +95,31 @@ function Storefront() {
         <Route path="/">
           <HomePage />
         </Route>
-        <Route path="/collections/夢鞄">
+        <Route path="/コレクション">
           <CollectionPage onAdd={addToCart} />
         </Route>
-        <Route path="/collections/%E5%A4%A2%E9%9E%84">
-          <CollectionPage onAdd={addToCart} />
-        </Route>
-        <Route path="/products/:id">
+        <Route path="/商品/:id">
           <ProductPage onAdd={addToCart} />
         </Route>
-        <Route path="/sobre-nos">
+        <Route path="/私たちについて">
           <AboutPage />
         </Route>
-        <Route path="/contacto">
+        <Route path="/お問い合わせ">
           <ContactPage />
         </Route>
-        <Route path="/rastreamento">
+        <Route path="/配送追跡">
           <TrackingPage />
         </Route>
-        <Route path="/termos-e-condicoes">
+        <Route path="/利用規約">
           <TermsPage />
         </Route>
-        <Route path="/politica-de-privacidade">
+        <Route path="/プライバシーポリシー">
           <PrivacyPage />
         </Route>
-        <Route path="/politica-de-reembolso">
+        <Route path="/返金ポリシー">
           <RefundPage />
         </Route>
-        <Route path="/politica-de-envio">
+        <Route path="/配送ポリシー">
           <ShippingPage />
         </Route>
         <Route>

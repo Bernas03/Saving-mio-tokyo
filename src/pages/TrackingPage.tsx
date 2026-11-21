@@ -2,7 +2,9 @@ import { InfoPage } from '@/components/InfoPage';
 import { storeInfo } from '@/data/store-info';
 
 export function TrackingPage() {
-  const mailto = `mailto:${storeInfo.contactEmail}?subject=${encodeURIComponent('tracking - ')}`;
+  const copyEmail = () => {
+    navigator.clipboard?.writeText(storeInfo.contactEmail);
+  };
 
   return (
     <InfoPage
@@ -19,10 +21,10 @@ export function TrackingPage() {
           <strong>tracking - order number</strong>
         </p>
         <p>For example: tracking - 12345</p>
-        <p>
-          <a className="button-primary" href={mailto}>
-            Open email
-          </a>
+                <p>
+          <button className="button-primary" type="button" onClick={copyEmail}>
+            Copy email address
+          </button>
         </p>
         <p>We will reply {storeInfo.responseTime}.</p>
       </section>
@@ -31,7 +33,7 @@ export function TrackingPage() {
         <h2>Didn't receive a number?</h2>
         <p>
           Check your spam folder. If you still get no reply, contact us through our{' '}
-          <a href="/contact">contact</a> page.
+          <a href="/お問い合わせ">contact</a> page.
         </p>
       </section>
     </InfoPage>
