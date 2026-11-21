@@ -9,8 +9,13 @@ type ProductPageProps = {
 
 const base = import.meta.env.BASE_URL;
 
-const description =
-  'A suede bucket-style tote with a braided handle and a round charm. The adjustable strap lets you wear it over the shoulder or across the body. The interior is lined in polyester and has no inner pocket.';
+const description = (
+  <>
+    A suede bucket-style tote with a braided handle and a round charm. The adjustable strap lets you wear it over the shoulder or across the body. The interior is lined in polyester and has no inner pocket.
+    <br /><br />
+    <strong>Dimensions:</strong> 22 cm (width) × 17 cm (depth) × 19 cm (height).
+  </>
+);
 
 export function ProductPage({ onAdd }: ProductPageProps) {
   const params = useParams();
@@ -28,7 +33,7 @@ export function ProductPage({ onAdd }: ProductPageProps) {
     );
   }
 
-  const gallery = [product.image, `${base}products/size.png`, `${base}products/another.png`];
+  const gallery = [product.image, product.secondaryImage];
 
   return (
     <main className="product-page">

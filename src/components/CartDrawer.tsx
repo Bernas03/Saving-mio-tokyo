@@ -118,7 +118,6 @@ export function CartDrawer({
                 <span>Subtotal</span>
                 <strong>{formatPrice(subtotal)}</strong>
               </div>
-              <p className="shipping-note">Free Shipping</p>
               <button className="drawer-continue" type="button" onClick={onClose}>
                 Continue Shopping <ArrowRight size={15} />
               </button>

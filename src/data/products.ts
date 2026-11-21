@@ -3,6 +3,7 @@ export type Product = {
   name: string;
   price: number;
   image: string;
+  secondaryImage: string;
 };
 
 const base = import.meta.env.BASE_URL;
@@ -13,32 +14,29 @@ export const products: Product[] = [
     name: 'Bucket Bag — Blue',
     price: 6000,
     image: `${base}products/azul.png`,
+    secondaryImage: `${base}products/azul2.png`,
   },
   {
     id: 'bucket-bag-brown',
     name: 'Bucket Bag — Brown',
     price: 6000,
     image: `${base}products/castanho.png`,
+    secondaryImage: `${base}products/castanho2.png`,
   },
   {
     id: 'bucket-bag-green',
     name: 'Bucket Bag — Green',
     price: 6000,
     image: `${base}products/verde.png`,
+    secondaryImage: `${base}products/verde2.png`,
   },
   {
     id: 'bucket-bag-red',
-    name: 'Bucket Bag — Red',
+    name: 'Bucket Bag — Yellow',
     price: 6000,
-    image: `${base}products/vermelho.png`,
+    image: `${base}products/amarelo.png`,
+    secondaryImage: `${base}products/amarelo2.png`,
   },
-];
-
-// Fotos extra, para a futura página de produto (galeria / tabela de medidas).
-export const extraProductPhotos = [
-  `${base}products/another.png`,
-  `${base}products/home-page.png`,
-  `${base}products/size.png`,
 ];
 
 export function formatPrice(price: number) {

@@ -120,7 +120,7 @@ export function TermsPage() {
         <h2>17 – Entire agreement · 18 – Governing law</h2>
         <p>
           These Terms constitute the entire agreement between you and us, governed by and interpreted under the laws
-          of United States.
+          of the State of Wyoming.
         </p>
       </section>
       <section>
@@ -300,8 +300,7 @@ export function ShippingPage() {
       <section>
         <h2>Shipping costs</h2>
         <p>
-          Shipping is <strong>completely free</strong> on all orders. No extra shipping fees and no minimum order
-          value.
+          Shipping costs ¥1,000 on all orders.
         </p>
       </section>
 
