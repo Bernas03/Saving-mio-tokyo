@@ -144,7 +144,6 @@ export function PrivacyPage() {
           <strong>{storeInfo.legalName}</strong> operates {storeInfo.name} (mio-tokyo.com), including all related
           information, features, products and services (the "Services"). This Privacy Policy describes how we
           collect, use and disclose your personal information when you use the Services or communicate with us.{' '}
-          {storeInfo.name} is powered by Shopify.
         </p>
       </section>
 
@@ -195,12 +194,14 @@ export function PrivacyPage() {
       </section>
 
       <section>
-        <h2>Disclosure & Shopify</h2>
+        <h2>Disclosure and service providers</h2>
         <p>
-          We may share data with Shopify, suppliers and service providers (IT, payments, analytics, support, storage,
-          order processing, shipping), with marketing partners, and where legally required. The Services are hosted by
-          Shopify, which processes data to provide and improve them; see Shopify's consumer Privacy Policy at
-          privacy.shopify.com.
+          We may share personal data with service providers that help us run the store, including
+          payment processing (<a href="https://stripe.com/privacy" target="_blank" rel="noreferrer">Stripe</a>),
+          website hosting (<a href="https://docs.github.com/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Pages</a>),
+          checkout infrastructure (<a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noreferrer">Cloudflare</a>),
+          shipping carriers and customer support. Payments are processed by Stripe; we do not store your full
+          card details. We may also disclose data where legally required.
         </p>
       </section>
 
@@ -300,7 +301,7 @@ export function ShippingPage() {
       <section>
         <h2>Shipping costs</h2>
         <p>
-          Shipping costs ¥1,000 on all orders.
+          Shipping costs ¥4500 on all orders.
         </p>
       </section>
 
