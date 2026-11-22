@@ -10,28 +10,28 @@ const base = import.meta.env.BASE_URL;
 
 export const products: Product[] = [
   {
-    id: 'bucket-bag-blue',
+    id: 'バケットバッグ — ブルー', //bucket-bag-blue
     name: 'バケットバッグ — ブルー',
     price: 28000,
     image: `${base}products/blue.png`,
     secondaryImage: `${base}products/blue2.png`,
   },
   {
-    id: 'bucket-bag-brown',
+    id: 'バケットバッグ — ブラウン', //bucket-bag-brown
     name: 'バケットバッグ — ブラウン',
     price: 28000,
     image: `${base}products/brown.png`,
     secondaryImage: `${base}products/brown2.png`,
   },
   {
-    id: 'bucket-bag-green',
+    id: 'バケットバッグ — グリーン', //bucket-bag-green
     name: 'バケットバッグ — グリーン',
     price: 28000,
     image: `${base}products/green.png`,
     secondaryImage: `${base}products/green2.png`,
   },
   {
-    id: 'bucket-bag-yellow',
+    id: 'バケットバッグ — レッド', //bucket-bag-yellow
     name: 'バケットバッグ — レッド',
     price: 28000,
     image: `${base}products/yellow.png`,
