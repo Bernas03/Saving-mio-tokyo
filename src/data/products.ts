@@ -31,8 +31,8 @@ export const products: Product[] = [
     secondaryImage: `${base}products/green2.png`,
   },
   {
-    id: 'バケットバッグ — レッド', //bucket-bag-yellow
-    name: 'バケットバッグ — レッド',
+    id: 'バケットバッグ — イエロー', //bucket-bag-yellow
+    name: 'バケットバッグ — イエロー',
     price: 28000,
     image: `${base}products/yellow.png`,
     secondaryImage: `${base}products/yellow2.png`,
